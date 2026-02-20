@@ -3,17 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Services - MS Digital World</title>
-    <meta name="description" content="Digital marketing services by MS Digital World: SEO, social media marketing, Google Ads, and conversion-focused growth strategies.">
-
+    <title>Digital Marketing Services India | MS Digital World</title>
+    <meta name="description" content="Boost your business with expert digital marketing services in India. SEO, SMM, Google Ads & content marketing for small businesses. Get free consultation today!">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: flex !important;
+        }
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        .service-features li {
+            padding: 0.5rem 0;
+            color: rgba(255,255,255,0.8);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .service-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #a4d43a;
+        }
+        .service-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #a4d43a;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+        .process-timeline {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        .step-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #a4d43a;
+            min-width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(164, 212, 58, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(164, 212, 58, 0.3);
+        }
+        .step-content h3 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        .step-content p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+        }
+        .faq-container {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .faq-item h3 {
+            color: #a4d43a;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .faq-item p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+        }
+        .cta-badge {
+            background: linear-gradient(135deg, #a4d43a, #4db8b8);
+            color: #0f1729;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        .cta-offers {
+            margin: 2rem 0;
+        }
+        .offer-item {
+            color: rgba(255,255,255,0.9);
+            margin: 0.5rem 0;
+        }
+        .urgency-text {
+            color: #a4d43a;
+            font-weight: 600;
+            margin: 1.5rem 0;
+        }
+        .contact-info {
+            margin-top: 2rem;
+            color: rgba(255,255,255,0.8);
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+    </style>
+    
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does digital marketing cost in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Digital marketing costs in India vary based on services and business size. Small businesses can start with ₹15,000-₹30,000/month for basic SEO and social media. Comprehensive packages including Google Ads and advanced strategies range from ₹50,000-₹2,00,000/month. We offer customized solutions based on your goals and budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see results from digital marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Results timeline varies by service: SEO typically shows significant results in 3-6 months, Google Ads can deliver traffic within days, social media marketing shows engagement in 2-4 weeks, and content marketing builds momentum over 2-3 months. We provide regular reports and optimize campaigns for faster results."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which digital marketing services are best for small businesses in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For small businesses in India, we recommend starting with Local SEO, Google My Business optimization, targeted social media marketing, and cost-effective Google Ads campaigns. These services provide the best ROI for businesses with limited budgets, helping you reach local customers and build brand awareness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide digital marketing services for specific industries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we specialize in digital marketing for various industries including retail, e-commerce, healthcare, education, real estate, restaurants, manufacturing, and professional services. Our team creates customized strategies based on industry trends, target audience behavior, and competitive landscape."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure digital marketing success?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We track multiple KPIs including website traffic, conversion rates, lead generation, cost per acquisition (CPA), return on ad spend (ROAS), search engine rankings, social media engagement, and revenue growth. Our detailed monthly reports show clear ROI and actionable insights for continuous improvement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with local SEO for my business in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Local SEO is one of our core specialties. We optimize your Google My Business profile, build local citations, manage customer reviews, create location-specific content, and implement geo-targeted strategies to help you rank higher in local search results and attract nearby customers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes MS Digital World different from other digital marketing agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MS Digital World stands out with our transparent reporting, customized strategies, deep understanding of the Indian market, affordable pricing, and dedicated account managers. We focus on ROI-driven results rather than vanity metrics, ensuring every marketing rupee delivers measurable business growth."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-
+    
+    <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -21,13 +192,13 @@
                     <img src="images/Logo.png" alt="MS Digital World Logo" class="logo-img">
                     <span class="gradient-text logo-text">MS Digital World</span>
                 </a>
-
-                <div class="nav-links" id="navLinks">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
+                
+                <div class="nav-links" id="navLinks" style="display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap !important; white-space: nowrap !important; justify-content: flex-end;">
+                    <a href="index.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">Home</a>
+                    <a href="about.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">About</a>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Digital Marketing</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                        <span class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important;">Digital Marketing</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
                             <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
                             <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
                             <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
@@ -35,8 +206,8 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Web Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                        <span class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important;">Web Design</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
                             <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
                             <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
                             <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
@@ -48,24 +219,18 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Graphic Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                        <span class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important;">Graphic Designing</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
                             <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Creatives</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Marketing Collateral</a>
                             <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographic Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Motion Graphics & Video Editing</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Business Card Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Marketing Collateral</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Creatives</a>
                         </div>
                     </div>
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="testimonials.html" class="nav-link">Testimonials</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="contact.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">Contact</a>
                 </div>
-
+                
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
                     <span></span>
@@ -75,91 +240,679 @@
         </div>
     </nav>
 
-    <header class="service-page-hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-bg">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
             <div class="blob blob-3"></div>
         </div>
-
+        
         <div class="container">
-            <div class="service-hero-content reveal active">
-                <div class="service-badge">📈 Growth Marketing</div>
-                <h1 class="service-hero-title">Digital Marketing <span class="gradient-text">Services</span></h1>
-                <p class="service-hero-subtitle">SEO, Ads, and Social strategies designed to attract the right audience and convert them into customers.</p>
-                <div class="service-hero-actions">
-                    <a href="contact.html" class="btn-primary modern-hover">Get Quote <span class="arrow">→</span></a>
-                    <a href="#overview" class="btn-outline modern-hover">Explore Details</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="service-page-section" id="overview">
-            <div class="container">
-                <div class="service-page-grid">
-                    <div class="service-page-card glass-card">
-                        <h2>What this service is</h2>
-                        <p>Digital Marketing is the process of growing your business online by increasing visibility, driving qualified traffic, and improving conversions across search engines, social platforms, and paid advertising.</p>
-                        <p>At MS Digital World, we combine strategy, content, design, and data to build campaigns that generate measurable ROI.</p>
+            <div class="hero-content">
+                <div class="hero-text text-center max-w-5xl mx-auto">
+                    <!-- Badge -->
+                    <div class="badge fade-in">
+                        <span class="sparkles">✨</span>
+                        <span class="badge-text">Digital Marketing Experts</span>
                     </div>
-
-                    <div class="service-page-card glass-card">
-                        <h2>How it works</h2>
-                        <ol class="service-steps">
-                            <li><strong>Discovery:</strong> Understand your goals, customers, and competitors.</li>
-                            <li><strong>Strategy:</strong> Choose channels (SEO, Ads, Social) and define KPIs.</li>
-                            <li><strong>Execution:</strong> Launch content, creatives, and campaigns.</li>
-                            <li><strong>Optimization:</strong> Improve performance using analytics and testing.</li>
-                        </ol>
+                    
+                    <h1 class="hero-title fade-in">
+                        Digital Marketing Services That <br>
+                        <span class="gradient-text">Drive Real Business Growth</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle fade-in">
+                        Strategic SEO, targeted Google Ads, and engaging social media campaigns that connect your Indian business with customers ready to buy. Stop guessing, start growing with data-driven digital marketing.
+                    </p>
+                    
+                    <div class="hero-buttons fade-in">
+                        <a href="contact.html" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"/>
+                            </svg>
+                            <span>Get Free Consultation</span>
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.5 4L9.303 4.5915C9.24777 4.75718 9.15472 4.90774 9.03123 5.03123C8.90774 5.15472 8.75718 5.24777 8.5915 5.303L8 5.5L8.5915 5.697C8.75718 5.75223 8.90774 5.84528 9.03123 5.96877C9.15472 6.09226 9.24777 6.24282 9.303 6.4085L9.5 7L9.697 6.4085C9.75223 6.24282 9.84528 6.09226 9.96877 5.96877C10.0923 5.84528 10.2428 5.75223 10.4085 5.697L11 5.5L10.4085 5.303C10.2428 5.24777 10.0923 5.15472 9.96877 5.03123C9.84528 4.90774 9.75223 4.75718 9.697 4.5915L9.5 4Z"/>
+                            </svg>
+                            <span>Explore Services</span>
+                        </a>
                     </div>
-
-                    <div class="service-page-card glass-card">
-                        <h2>How MS Digital World delivers</h2>
-                        <ul class="service-bullets">
-                            <li>Weekly/monthly reporting with clear next steps.</li>
-                            <li>Conversion-focused landing pages and creatives.</li>
-                            <li>Continuous testing for better CPL/CPA and ROAS.</li>
-                            <li>Transparent communication and on-time execution.</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-page-card glass-card">
-                        <h2>Included features</h2>
-                        <div class="service-features">
-                            <span class="feature-chip">SEO (On-page + Technical)</span>
-                            <span class="feature-chip">Local SEO</span>
-                            <span class="feature-chip">Google Ads (Search/Display)</span>
-                            <span class="feature-chip">Social Media Marketing</span>
-                            <span class="feature-chip">Content Strategy</span>
-                            <span class="feature-chip">Analytics & Tracking</span>
-                            <span class="feature-chip">Conversion Optimization</span>
-                            <span class="feature-chip">Lead Generation Funnels</span>
+                    
+                    <div class="hero-stats fade-in">
+                        <div class="stats-row">
+                            <div class="stat-item modern-card floating-element">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Businesses Helped</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.2s;">
+                                <div class="stat-number">300%</div>
+                                <div class="stat-label">Average ROI</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.4s;">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.6s;">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in" style="animation-delay: 1.2s;">
+            <div class="mouse-wrapper">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="service-page-cta">
-            <div class="container">
-                <div class="service-cta-card">
-                    <div class="service-cta-copy">
-                        <h2>Ready to grow your leads and sales?</h2>
-                        <p>Tell us your goal — we’ll recommend the right mix of SEO, ads, and social to achieve it.</p>
+    <!-- Problem Solution Section -->
+    <section class="about" id="overview">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            Struggling to Attract Customers <span class="gradient-text">Online?</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            You're not alone. In today's competitive Indian market, getting noticed online is tougher than ever.
+                        </p>
                     </div>
-                    <div class="service-cta-actions">
-                        <a href="contact.html" class="btn-primary">Contact Us <span class="arrow">→</span></a>
-                        <a href="contact.html" class="btn-outline">Get Quote</a>
+                    
+                    <div class="about-description">
+                        <p class="about-text">
+                            Your competitors are already using digital marketing to capture your potential customers. Every day you wait, you're losing business to companies that show up first on Google, dominate social media, and convert website visitors into loyal customers.
+                        </p>
+                        
+                        <p class="about-text-secondary">
+                            But here's the good news: MS Digital World specializes in helping Indian businesses like yours cut through the noise and connect with customers actively searching for your products or services. We don't just run campaigns – we build sustainable growth engines that deliver measurable results.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <div class="footer-bg">
+    <!-- What is Digital Marketing -->
+    <section class="services" id="what-is-digital-marketing">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title modern-heading text-center">
+                    What is <span class="gradient-text">Digital Marketing?</span>
+                </h2>
+                <p class="section-subtitle text-center">
+                    The powerful combination of strategies that puts your business in front of customers when they're ready to buy
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3>More Than Just Online Advertising</h3>
+                    <p>Digital marketing is the strategic use of online channels to reach your target audience, build brand awareness, generate leads, and drive sales. Unlike traditional marketing, digital strategies are measurable, targeted, and cost-effective – perfect for Indian businesses looking to maximize their marketing budget.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3>Comprehensive Online Presence</h3>
+                    <p>At MS Digital World, we integrate multiple digital channels including search engines, social media platforms, email marketing, content marketing, and paid advertising to create a comprehensive online presence that attracts, engages, and converts your ideal customers.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 0-8-3-8-8 0-4.32 3.04-8 8-8s8 3.68 8 8c0 5-3 8-8 8z"/>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+                        </svg>
+                    </div>
+                    <h3>Measurable Results</h3>
+                    <p>Track every click, conversion, and sale. Our detailed reports show you exactly how your marketing investment is performing and where we can optimize for better results. No more guessing – just data-driven decisions that grow your business.</p>
+                </div>
+            </div>
+            
+            <div class="stats-row" style="margin-top: 4rem;">
+                <div class="stat-item modern-card">
+                    <div class="stat-number">77%</div>
+                    <div class="stat-label">of Indian consumers research online before purchasing</div>
+                </div>
+                <div class="stat-item modern-card">
+                    <div class="stat-number">5.6x</div>
+                    <div class="stat-label">higher ROI with digital marketing vs traditional methods</div>
+                </div>
+                <div class="stat-item modern-card">
+                    <div class="stat-number">62%</div>
+                    <div class="stat-label">of small businesses report growth through digital marketing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Digital Marketing -->
+    <section class="about" id="why-digital-marketing">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            Why Your Business Needs <span class="gradient-text">Digital Marketing in India</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            The digital landscape is evolving – don't get left behind
+                        </p>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🎯</div>
+                            <h3>Precise Targeting</h3>
+                            <p>Reach customers by location, age, interests, behavior, and purchasing intent. Show your ads only to people most likely to buy from you.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">💰</div>
+                            <h3>Cost-Effective Solutions</h3>
+                            <p>Get better results with smaller budgets. Digital marketing costs 60% less than traditional marketing while delivering 3x more leads.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">📊</div>
+                            <h3>Measurable ROI</h3>
+                            <p>Know exactly what's working. Track every click, conversion, and sale with detailed analytics and performance reports.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🚀</div>
+                            <h3>Competitive Advantage</h3>
+                            <p>Your competitors are already online. Don't let them capture your market share. Level the playing field with smarter strategies.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">📱</div>
+                            <h3>Mobile Customers</h3>
+                            <p>With over 700 million internet users in India, our mobile-first strategies ensure you reach customers wherever they are.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🔄</div>
+                            <h3>Long-Term Relationships</h3>
+                            <p>Build lasting relationships through email marketing, social media engagement, and valuable content that keeps customers coming back.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title modern-heading text-center">
+                    Our Digital Marketing <span class="gradient-text">Services</span>
+                </h2>
+                <p class="section-subtitle text-center">
+                    Everything you need to succeed online, all under one roof
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <h3>Search Engine Optimization (SEO)</h3>
+                    <p>Rank higher on Google and attract organic traffic. Our SEO strategies include keyword research, on-page optimization, technical SEO, local SEO, and quality link building to improve your search visibility and drive qualified leads.</p>
+                    <ul class="service-features">
+                        <li>Local SEO for Indian businesses</li>
+                        <li>E-commerce SEO for online stores</li>
+                        <li>Technical SEO audit and fixes</li>
+                        <li>Content optimization and strategy</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3>Social Media Marketing (SMM)</h3>
+                    <p>Build brand awareness and engage with customers on Facebook, Instagram, LinkedIn, Twitter, and more. We create compelling content, manage your social presence, and run targeted ad campaigns that drive engagement and conversions.</p>
+                    <ul class="service-features">
+                        <li>Content creation and scheduling</li>
+                        <li>Social media advertising</li>
+                        <li>Community management</li>
+                        <li>Influencer marketing partnerships</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="12" x="2" y="6" rx="2"/>
+                            <path d="M12 12h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Google Ads & PPC Marketing</h3>
+                    <p>Get instant traffic and leads with targeted pay-per-click campaigns. Our Google Ads specialists create high-converting campaigns that maximize your ad spend and deliver immediate results while optimizing for long-term success.</p>
+                    <ul class="service-features">
+                        <li>Search and display advertising</li>
+                        <li>Shopping ads for e-commerce</li>
+                        <li>Remarketing campaigns</li>
+                        <li>Landing page optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h3>Content Marketing</h3>
+                    <p>Attract and engage your audience with valuable content that builds trust and authority. From blog posts and infographics to videos and case studies, we create content that resonates with your target audience and drives conversions.</p>
+                    <ul class="service-features">
+                        <li>Blog writing and optimization</li>
+                        <li>Video content creation</li>
+                        <li>Infographic design</li>
+                        <li>Content strategy and planning</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-10 5L2 7"/>
+                        </svg>
+                    </div>
+                    <h3>Email Marketing</h3>
+                    <p>Nurture leads and retain customers with personalized email campaigns. We design responsive email templates, segment your audience, and automate campaigns that drive engagement and repeat business.</p>
+                    <ul class="service-features">
+                        <li>Newsletter design and management</li>
+                        <li>Automated email sequences</li>
+                        <li>Lead nurturing campaigns</li>
+                        <li>Performance tracking and optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Conversion Rate Optimization (CRO)</h3>
+                    <p>Turn more website visitors into customers. Our CRO specialists analyze user behavior, run A/B tests, and optimize your website and landing pages to increase conversion rates and maximize your marketing ROI.</p>
+                    <ul class="service-features">
+                        <li>Landing page optimization</li>
+                        <li>A/B testing and analysis</li>
+                        <li>User experience improvements</li>
+                        <li>Conversion funnel optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="about" id="benefits">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            Benefits of Choosing Our <span class="gradient-text">Digital Marketing Services</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            Real results that transform your business
+                        </p>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card modern-card">
+                            <div class="service-number">01</div>
+                            <h3>Increased Website Traffic</h3>
+                            <p>Drive 300% more qualified traffic to your website through SEO, paid ads, and social media campaigns that target customers actively searching for your products or services.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-number">02</div>
+                            <h3>Higher Conversion Rates</h3>
+                            <p>Convert more visitors into customers with optimized landing pages, compelling ad copy, and strategic calls-to-action that guide users through the buying journey.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-number">03</div>
+                            <h3>Improved Brand Awareness</h3>
+                            <p>Build a strong online presence that makes your brand memorable and trustworthy. Our strategies position you as an authority in your industry.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-number">04</div>
+                            <h3>Better ROI on Marketing Spend</h3>
+                            <p>Every marketing rupee works harder with our data-driven approach. We continuously optimize campaigns to maximize your return on investment and reduce cost per acquisition.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-number">05</div>
+                            <h3>Competitive Advantage</h3>
+                            <p>Stay ahead of competitors with cutting-edge strategies and continuous optimization. We help you capture market share before your competitors do.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-number">06</div>
+                            <h3>Scalable Growth</h3>
+                            <p>Start small and scale as you grow. Our flexible digital marketing solutions adapt to your business needs and budget, ensuring sustainable long-term growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="services" id="process">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title modern-heading text-center">
+                    Our Proven Digital Marketing <span class="gradient-text">Process</span>
+                </h2>
+                <p class="section-subtitle text-center">
+                    A systematic approach that delivers consistent results
+                </p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step modern-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We start by understanding your business goals, target audience, competitors, and current online presence. Our team conducts comprehensive research to develop a customized digital marketing strategy aligned with your objectives.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step modern-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planning & Setup</h3>
+                        <p>Based on our strategy, we set up all necessary tools, accounts, and tracking systems. We create detailed campaign plans, content calendars, and establish KPIs to measure success.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step modern-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Implementation & Launch</h3>
+                        <p>Our team executes the strategy across all selected channels. We launch SEO optimizations, create and publish content, set up ad campaigns, and begin social media activities.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step modern-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Monitoring & Optimization</h3>
+                        <p>We continuously monitor campaign performance, analyze data, and make real-time adjustments. A/B testing, budget reallocation, and strategy refinements ensure optimal results.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step modern-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Reporting & Scaling</h3>
+                        <p>Detailed monthly reports show exactly what's working and why. We use these insights to scale successful campaigns and explore new opportunities for growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="about" id="industries">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            Industries We <span class="gradient-text">Serve</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            Specialized digital marketing solutions for your industry
+                        </p>
+                    </div>
+                    
+                    <div class="services-grid">
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🛍️</div>
+                            <h3>Retail & E-commerce</h3>
+                            <p>Drive online sales and foot traffic with targeted campaigns for retail businesses and e-commerce stores.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🏥</div>
+                            <h3>Healthcare & Wellness</h3>
+                            <p>Attract patients and build trust with compliant healthcare digital marketing strategies.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🎓</div>
+                            <h3>Education & Training</h3>
+                            <p>Increase enrollments and reach students with targeted educational marketing campaigns.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🏠</div>
+                            <h3>Real Estate</h3>
+                            <p>Generate qualified leads for property sales and rentals with specialized real estate marketing.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🍽️</div>
+                            <h3>Restaurants & Food</h3>
+                            <p>Fill tables and increase orders with local SEO and social media marketing for restaurants.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🏭</div>
+                            <h3>Manufacturing & B2B</h3>
+                            <p>Generate business leads and establish industry authority with B2B digital marketing.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">💼</div>
+                            <h3>Professional Services</h3>
+                            <p>Attract high-value clients for law firms, consulting agencies, and other professional services.</p>
+                        </div>
+                        
+                        <div class="service-card modern-card">
+                            <div class="service-icon">🏨</div>
+                            <h3>Hospitality & Travel</h3>
+                            <p>Increase bookings and tourism with targeted hospitality and travel marketing campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="services" id="why-choose-us">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title modern-heading text-center">
+                    Why Choose <span class="gradient-text">MS Digital World?</span>
+                </h2>
+                <p class="section-subtitle text-center">
+                    The difference that makes all the difference
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card modern-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Indian Market Expertise</h3>
+                    <p>We understand the unique challenges and opportunities of the Indian digital landscape. Our strategies are tailored specifically for Indian consumers and business environments.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Transparent Reporting</h3>
+                    <p>No hidden metrics or confusing jargon. Our clear, detailed reports show exactly how your marketing investment is performing and what we're doing to improve results.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Customized Strategies</h3>
+                    <p>No one-size-fits-all solutions. We develop unique digital marketing strategies based on your specific business goals, industry, and target audience.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Results-Driven Approach</h3>
+                    <p>We focus on metrics that matter – leads, sales, and revenue. Every campaign is designed to deliver measurable business growth and positive ROI.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Dedicated Account Manager</h3>
+                    <p>Work with a dedicated account manager who understands your business and provides personalized support throughout your digital marketing journey.</p>
+                </div>
+                
+                <div class="service-card modern-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Get enterprise-level digital marketing services at prices that work for small and medium businesses. Flexible packages ensure you only pay for what you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="about" id="faqs">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            Frequently Asked <span class="gradient-text">Questions</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            Everything you need to know about our digital marketing services
+                        </p>
+                    </div>
+                    
+                    <div class="faq-container">
+                        <div class="faq-item modern-card">
+                            <h3>How much does digital marketing cost in India?</h3>
+                            <p>Digital marketing costs in India vary based on services and business size. Small businesses can start with ₹15,000-₹30,000/month for basic SEO and social media. Comprehensive packages including Google Ads and advanced strategies range from ₹50,000-₹2,00,000/month. We offer customized solutions based on your goals and budget.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>How long does it take to see results from digital marketing?</h3>
+                            <p>Results timeline varies by service: SEO typically shows significant results in 3-6 months, Google Ads can deliver traffic within days, social media marketing shows engagement in 2-4 weeks, and content marketing builds momentum over 2-3 months. We provide regular reports and optimize campaigns for faster results.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>Which digital marketing services are best for small businesses in India?</h3>
+                            <p>For small businesses in India, we recommend starting with Local SEO, Google My Business optimization, targeted social media marketing, and cost-effective Google Ads campaigns. These services provide the best ROI for businesses with limited budgets, helping you reach local customers and build brand awareness.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>Do you provide digital marketing services for specific industries?</h3>
+                            <p>Yes, we specialize in digital marketing for various industries including retail, e-commerce, healthcare, education, real estate, restaurants, manufacturing, and professional services. Our team creates customized strategies based on industry trends, target audience behavior, and competitive landscape.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>How do you measure digital marketing success?</h3>
+                            <p>We track multiple KPIs including website traffic, conversion rates, lead generation, cost per acquisition (CPA), return on ad spend (ROAS), search engine rankings, social media engagement, and revenue growth. Our detailed monthly reports show clear ROI and actionable insights for continuous improvement.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>Can you help with local SEO for my business in India?</h3>
+                            <p>Absolutely! Local SEO is one of our core specialties. We optimize your Google My Business profile, build local citations, manage customer reviews, create location-specific content, and implement geo-targeted strategies to help you rank higher in local search results and attract nearby customers.</p>
+                        </div>
+                        
+                        <div class="faq-item modern-card">
+                            <h3>What makes MS Digital World different from other digital marketing agencies?</h3>
+                            <p>MS Digital World stands out with our transparent reporting, customized strategies, deep understanding of the Indian market, affordable pricing, and dedicated account managers. We focus on ROI-driven results rather than vanity metrics, ensuring every marketing rupee delivers measurable business growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">🔥 Limited Time Offer</div>
+                <h2>Ready to Transform Your Online Presence?</h2>
+                <p>Stop losing customers to competitors. Start your digital marketing journey with MS Digital World today and get a FREE Digital Marketing Audit (₹10,000 value)!</p>
+                
+                <div class="cta-offers">
+                    <div class="offer-item">✓ FREE Digital Marketing Audit</div>
+                    <div class="offer-item">✓ Custom Strategy Session</div>
+                    <div class="offer-item">✓ 30-Day Performance Guarantee</div>
+                    <div class="offer-item">✓ No Hidden Fees or Long-Term Contracts</div>
+                </div>
+                
+                <p class="urgency-text"><strong>Offer expires in 48 hours!</strong> Don't miss this opportunity to transform your business with professional digital marketing.</p>
+                
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"/>
+                        </svg>
+                        <span>Get Your Free Audit Now</span>
+                    </a>
+                    <a href="tel:+919692727491" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9.5 4L9.303 4.5915C9.24777 4.75718 9.15472 4.90774 9.03123 5.03123C8.90774 5.15472 8.75718 5.24777 8.5915 5.303L8 5.5L8.5915 5.697C8.75718 5.75223 8.90774 5.84528 9.03123 5.96877C9.15472 6.09226 9.24777 6.24282 9.303 6.4085L9.5 7L9.697 6.4085C9.75223 6.24282 9.84528 6.09226 9.96877 5.96877C10.0923 5.84528 10.2428 5.75223 10.4085 5.697L11 5.5L10.4085 5.303C10.2428 5.24777 10.0923 5.15472 9.96877 5.03123C9.84528 4.90774 9.75223 4.75718 9.697 4.5915L9.5 4Z"/>
+                        </svg>
+                        <span>Call Us: +91 96927 27491</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <p><strong>Email:</strong> info@msdigitalworld.in</p>
+                    <p><strong>Office Hours:</strong> Monday - Saturday, 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #0f1729;">
+        <div class="footer-bg" style="display: none;">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
         </div>
@@ -167,6 +920,88 @@
             <div class="footer-content">
                 <div class="footer-col footer-about">
                     <a href="index.html" class="footer-logo">
+                        <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
+                        <h2 class="gradient-text">MS Digital World</h2>
+                    </a>
+                    <p style="margin-bottom: 1.5rem;">We build scalable digital solutions that help businesses grow online with clarity and confidence.</p>
+
+               
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>info@msdigitalworld.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+91 9692727491 / 8112161993</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Puri, Odisha, India 752001</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="website-development.html">Web Development</a></li>
+                        <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                        <li><a href="software.html">Software Development</a></li>
+                        <li><a href="automation-ai.html">Automation & AI</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for digital insights and updates.</p>
+                    <form class="newsletter-form" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <input type="email" placeholder="Enter your email" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-size: 0.9rem; outline: none;">
+                        <button type="submit" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #0f1729; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 MS Digital World. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faqs.html">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script defer src="js/main.js"></script>
+</body>
+</html>
                         <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
                         <h3 class="gradient-text">MS Digital World</h3>
                     </a>
