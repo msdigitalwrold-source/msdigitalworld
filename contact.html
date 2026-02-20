@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MS Digital World</title>
+    <meta name="description" content="Get in touch with MS Digital World. Let's discuss how we can help transform your business.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.png" alt="MS Digital World Logo" class="logo-img">
+                    <span class="gradient-text logo-text">MS Digital World</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Digital Marketing</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Web Design</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Graphic Design</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Creatives</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Marketing Collateral</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographic Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Motion Graphics & Video Editing</a>
+                        </div>
+                    </div>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="contact-hero-grid">
+                <div class="contact-hero-copy">
+                    <div class="badge">
+                        <span class="sparkles">✨</span>
+                        <span class="badge-text">Talk to an Expert</span>
+                    </div>
+
+                    <h1 class="contact-hero-title modern-heading">
+                        Let’s build your <span class="gradient-text">digital growth</span>
+                    </h1>
+                    <p class="contact-hero-subtitle">
+                        Share your requirements for SEO, digital marketing, website development, branding, or mobile apps. We’ll respond within 24 hours with next steps.
+                    </p>
+
+                    <div class="contact-hero-actions">
+                        <a href="#contactForm" class="btn-primary modern-hover">Get Free Consultation <span class="arrow">→</span></a>
+                        <a href="services.html" class="btn-outline modern-hover">Explore Services</a>
+                    </div>
+
+                    <div class="contact-hero-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-value">24h</div>
+                            <div class="highlight-label">Response time</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">SEO</div>
+                            <div class="highlight-label">Local + technical</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-value">Web</div>
+                            <div class="highlight-label">Fast & responsive</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-hero-card glass-card">
+                    <h3>Quick Contact</h3>
+                    <p>Choose the fastest way to reach us. You can also send a message using the form.</p>
+
+                    <div class="contact-methods">
+                        <a class="contact-method" href="mailto:info@msdigitalworld.in">
+                            <div class="method-icon">📧</div>
+                            <div class="method-text">
+                                <div class="method-title">Email</div>
+                                <div class="method-value">info@msdigitalworld.in</div>
+                            </div>
+                            <div class="method-cta">→</div>
+                        </a>
+                        <a class="contact-method" href="tel:+919692727491">
+                            <div class="method-icon">📞</div>
+                            <div class="method-text">
+                                <div class="method-title">Call</div>
+                                <div class="method-value">+91 9692727491</div>
+                            </div>
+                            <div class="method-cta">→</div>
+                        </a>
+                        <a class="contact-method" href="https://wa.me/919692727491">
+                            <div class="method-icon">💬</div>
+                            <div class="method-text">
+                                <div class="method-title">WhatsApp</div>
+                                <div class="method-value">Chat with our team</div>
+                            </div>
+                            <div class="method-cta">→</div>
+                        </a>
+                        <div class="contact-method" aria-label="Office location">
+                            <div class="method-icon">📍</div>
+                            <div class="method-text">
+                                <div class="method-title">Location</div>
+                                <div class="method-value">Puri, Odisha, India</div>
+                            </div>
+                            <div class="method-cta">•</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Trust -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container glass-card">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we’ll get back to you within 24 hours.</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">👤</span>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">📧</span>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">📞</span>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+91 96927 27491">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon">🎯</span>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="digital-marketing">Digital Marketing</option>
+                                        <option value="website-development">Website Development</option>
+                                        <option value="mobile-app">Mobile App Development</option>
+                                        <option value="graphic-design">Graphic Designing</option>
+                                        <option value="seo">SEO Services</option>
+                                        <option value="social-media">Social Media Marketing</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Project Details</label>
+                            <div class="input-wrapper">
+                                <span class="input-icon textarea-icon">💬</span>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, goals, and timeline..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Send me updates about MS Digital World services and offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-aside glass-card">
+                    <h2>Business Hours</h2>
+                    <p>We’re available Mon-Sat. For urgent requests, call or WhatsApp us.</p>
+
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <div class="hours-day">Mon - Sat</div>
+                            <div class="hours-time">9:00 AM - 7:00 PM</div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="hours-day">Sunday</div>
+                            <div class="hours-time">Closed</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-aside-cta">
+                        <a href="tel:+919692727491" class="btn-outline modern-hover">Call Now</a>
+                        <a href="https://wa.me/919692727491" class="btn-primary modern-hover">WhatsApp <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="contact-aside-note">
+                        <strong>Office:</strong> Luhagada Jaga, Tiadi sahi, Puri, Odisha, India 752002
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What you can <span class="gradient-text">expect</span></h2>
+                <p class="section-subtitle">Clear communication, transparent timelines, and results you can measure.</p>
+            </div>
+
+            <div class="contact-expect-grid">
+                <div class="expect-card glass-card">
+                    <h3>Business-first Strategy</h3>
+                    <p>We start with your goals and audience, then build a plan around what will grow traffic, leads, and sales. From SEO audits and competitor research to campaign planning, we focus on high-impact actions.</p>
+                </div>
+                <div class="expect-card glass-card">
+                    <h3>Modern Design & Development</h3>
+                    <p>We create responsive websites, landing pages, e-commerce stores, and web apps that load fast, look premium, and convert visitors into customers.</p>
+                </div>
+                <div class="expect-card glass-card">
+                    <h3>SEO & Performance Optimization</h3>
+                    <p>We optimize your site for search engines and users: technical SEO, on-page SEO, local SEO, speed improvements, and conversion rate optimization for better rankings and better results.</p>
+                </div>
+                <div class="expect-card glass-card">
+                    <h3>Reporting & Support</h3>
+                    <p>You get straightforward reporting and updates. We track what matters—leads, calls, sales, and ROI—so you always know where you stand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services we can help you with</h2>
+                <p class="section-subtitle">End-to-end solutions for branding, marketing, and development.</p>
+            </div>
+
+            <div class="service-areas-grid">
+                <div class="area-card glass-card">
+                    <h3>Digital Marketing</h3>
+                    <p>Social media marketing, paid ads, lead generation campaigns, remarketing, and content strategy.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">SMM</span>
+                        <span class="keyword-pill">Google Ads</span>
+                        <span class="keyword-pill">Meta Ads</span>
+                    </div>
+                </div>
+                <div class="area-card glass-card">
+                    <h3>SEO Services</h3>
+                    <p>Technical SEO, on-page SEO, local SEO, keyword research, and content optimization for higher rankings.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">Local SEO</span>
+                        <span class="keyword-pill">On-Page SEO</span>
+                        <span class="keyword-pill">Technical SEO</span>
+                    </div>
+                </div>
+                <div class="area-card glass-card">
+                    <h3>Website & E-Commerce Development</h3>
+                    <p>Fast, secure websites and online stores built for conversion with modern UI/UX.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">Business Website</span>
+                        <span class="keyword-pill">E-Commerce</span>
+                        <span class="keyword-pill">Landing Pages</span>
+                    </div>
+                </div>
+                <div class="area-card glass-card">
+                    <h3>Mobile App Development</h3>
+                    <p>Android/iOS apps with scalable architecture, smooth UX, and reliable maintenance.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">Android</span>
+                        <span class="keyword-pill">iOS</span>
+                        <span class="keyword-pill">UI/UX</span>
+                    </div>
+                </div>
+                <div class="area-card glass-card">
+                    <h3>Branding & Graphic Design</h3>
+                    <p>Logo design, brand identity, marketing creatives, and social media design that stands out.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">Brand Identity</span>
+                        <span class="keyword-pill">Logo</span>
+                        <span class="keyword-pill">Creatives</span>
+                    </div>
+                </div>
+                <div class="area-card glass-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Website security, vulnerability checks, basic hardening, and best-practice implementation.</p>
+                    <div class="area-tags">
+                        <span class="keyword-pill">Security Audit</span>
+                        <span class="keyword-pill">Hardening</span>
+                        <span class="keyword-pill">Protection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How we work</h2>
+                <p class="section-subtitle">A simple process that keeps things fast, clear, and effective.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-badge">1</div>
+                    <h3>Discovery Call</h3>
+                    <p>We understand your business, audience, competitors, and goals. You share requirements and timelines.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-badge">2</div>
+                    <h3>Proposal & Roadmap</h3>
+                    <p>We share a clear scope, pricing, deliverables, and milestones—no confusion, no hidden surprises.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-badge">3</div>
+                    <h3>Build & Launch</h3>
+                    <p>Design, development, and implementation. We test thoroughly and launch with best practices.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-badge">4</div>
+                    <h3>Optimize & Grow</h3>
+                    <p>After launch, we improve performance and results using SEO, analytics, and conversion optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="gradient-text">FAQs</span></h2>
+                <p class="section-subtitle">Quick answers before you send your message.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How soon will you reply?</h3>
+                    <p>We typically respond within 24 hours. For urgent requests, you can call us directly for faster coordination.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Yes. We work with startups, local businesses, and established brands. We recommend the right package based on your goals and budget.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you handle SEO + website together?</h3>
+                    <p>Absolutely. Many clients choose a combined website + SEO plan because it improves both rankings and conversions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What details should I include in the form?</h3>
+                    <p>Share your business type, target location, services you need, current website/social links (if any), goals, and timeline.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide ongoing support?</h3>
+                    <p>Yes. We offer maintenance, performance monitoring, SEO support, creative updates, and campaign management.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Where are you located?</h3>
+                    <p>We’re based in Puri, Odisha, India, and we work with clients across India and globally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-final-cta">
+        <div class="container">
+            <div class="final-cta-card">
+                <div class="final-cta-copy">
+                    <h3>Ready to grow your business?</h3>
+                    <p>Send your requirements and get a clear action plan for SEO, digital marketing, website development, or branding.</p>
+                </div>
+                <div class="final-cta-actions">
+                    <a href="#contactForm" class="btn-primary">Get Free Consultation <span class="arrow">→</span></a>
+                    <a href="services.html" class="btn-outline">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
+                        <h2 class="gradient-text">MS Digital World</h2>
+                    </a>
+                    <p>Your trusted partner for digital transformation. We help businesses grow with cutting-edge technology and creative solutions.</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>info@msdigitalworld.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+91 9692727491 / 8112161993</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Luhagada Jaga, Tiadi sahi, Puri, Odisha, India 752002</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile App Development</a></li>
+                        <li><a href="services.html">Graphic Designing</a></li>
+                        <li><a href="services.html">Software Development</a></li>
+                        <li><a href="services.html">Social Media Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="help-center.html">Help Center</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 MS Digital World. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="js/main.js"></script>
+</body>
+</html>
+
+

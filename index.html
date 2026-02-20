@@ -1,27 +1,802 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Full Page Iframe</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Digital World - Premium Digital Agency</title>
+    <meta name="description" content="MS Digital World - Leading digital agency offering digital marketing, web development, mobile apps, and graphic designing services.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: flex !important;
+        }
+    </style>
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <img src="images/Logo.png" alt="MS Digital World Logo" class="logo-img">
+                    <span class="gradient-text logo-text">MS Digital World</span>
+                </a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Digital Marketing</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
+                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Web Design</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
+                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Software</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Retail Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Wholesale Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Production Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hotel &amp; Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">AC Service Centre Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Retail Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Distributor and Whole Sale Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hospital Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Office Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">MLM Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Saloon and Spa Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Education Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Examination Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Bakery Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Employee Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pathology Lab Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Billing and Account Software</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Graphic Designing</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 360px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Business Card Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Letterhead Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Flyer Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Poster Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brochure Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Banner Design (Online &amp; Offline)</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pamphlet Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Catalog Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Leaflet Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Advertisements</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Point-of-Sale (POS) Display Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Event / Exhibition Stand Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographics Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Artwork / Illustrations</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Digital Painting &amp; Vector Art</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Book / Magazine Cover Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Product Label &amp; Sticker Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Icon &amp; Graphic Sets</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Newsletter Creative Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Presentation / Pitch Deck Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Creative Campaign Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Branding Consultation</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Instagram / Facebook Posts Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ad Banner Design (FB, Instagram, Google Ads)</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">YouTube Thumbnail Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Reels / Short Video Graphics</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Cover/Banner Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Story &amp; Highlight Cover Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Carousel Post Design</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Animated Social Media Creatives</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Infographics</a>
+                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Branded Social Media Templates</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">Automation AI</span>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">email automatically send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">bulk mail send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp chat AI</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp offer promotion</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp bulk msg send</a>
+                        </div>
+                    </div>
 
-  <iframe src="https://ms-web-craftsman.lovable.app/"></iframe>
+                    <a href="contact.html" class="nav-link">Contact</a>
 
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text text-center max-w-5xl mx-auto">
+                    <!-- Badge -->
+                    <div class="badge fade-in">
+                        <span class="sparkles">✨</span>
+                        <span class="badge-text">Your Digital Success Partner</span>
+                    </div>
+                    
+                    <h1 class="hero-title fade-in">
+                        Grow Your Business Digitally with <br>
+                        <span class="gradient-text">MS Digital World</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle fade-in">
+                        Full-service digital marketing, website development, mobile apps, and branding solutions to elevate your business to new heights.
+                    </p>
+                    
+                    <div class="hero-buttons fade-in">
+                        <a href="contact.html" class="btn-primary modern-hover">
+                            Get Free Consultation
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="services.html" class="btn-outline modern-hover">
+                            View Services
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats fade-in">
+                        <div class="stats-row">
+                            <div class="stat-item modern-card floating-element">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.2s;">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">Satisfaction</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.4s;">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Team</div>
+                            </div>
+                            <div class="stat-item modern-card floating-element" style="animation-delay: 0.6s;">
+                                <div class="stat-number">1+</div>
+                                <div class="stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in" style="animation-delay: 1.2s;">
+            <div class="mouse-wrapper">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2 class="section-title modern-heading">
+                            About <span class="gradient-text">MS Digital World</span>
+                        </h2>
+                        <p class="about-subtitle">
+                            A performance-driven digital agency helping businesses grow through strategy, technology, and measurable marketing solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="about-description">
+                        <p class="about-text">
+                            MS Digital World is a growth-focused digital marketing and software development agency supporting startups, local businesses, and growing brands. We combine strategy, design, and technology to build powerful online presence and deliver measurable business results.
+                        </p>
+
+                        <!-- <div class="about-keywords" aria-label="Core services keywords">
+                            <span class="keyword-pill">Digital Marketing</span>
+                            <span class="keyword-pill">SEO Services</span>
+                            <span class="keyword-pill">Website Development</span>
+                            <span class="keyword-pill">E-Commerce</span>
+                            <span class="keyword-pill">Branding & Design</span>
+                            <span class="keyword-pill">Mobile App Development</span>
+                        </div> -->
+
+                        <div class="about-stats-mini">
+                            <div class="stat-mini">
+                                <span class="stat-mini-number">Strategy</span>
+                                <span class="stat-mini-label">Data-driven planning & market positioning</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-mini-number">Design</span>
+                                <span class="stat-mini-label">Conversion-focused UI/UX & branding</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-mini-number">Growth</span>
+                                <span class="stat-mini-label">SEO, paid media & performance scaling</span>
+                            </div>
+                        </div>
+                        
+                        <p class="about-text-secondary">
+                            Our mission is to help businesses generate qualified leads, increase online visibility, and improve conversion rates using structured, data-backed strategies. We create digital systems that attract, engage, and convert customers consistently.
+                        </p>
+
+                        <div class="about-actions">
+                            <a href="services.html" class="btn-outline modern-hover">Explore Services</a>
+                            <a href="contact.html" class="btn-primary modern-hover">Get Free Consultation <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-placeholder">
+                            <div class="about-image-icon">🚀</div>
+                            <h3>Digital Excellence</h3>
+                            <p>Strategic marketing, SEO, and scalable development designed to accelerate digital growth and maximize return on investment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-card modern-feature">
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">🎯</span>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Result-Focused</h3>
+                                <p>Focused on results that grow your business.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card modern-feature">
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">👥</span>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Professionals</h3>
+                                <p>Skilled team delivering quality digital solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card modern-feature">
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">💡</span>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Innovation First</h3>
+                                <p>Using modern technology to build better experiences.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card modern-feature">
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">🏆</span>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Client Success</h3>
+                                <p>Your success drives everything we do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview Section -->
+    <section class="service-overview reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our Service <span class="gradient-text">Overview</span>
+                </h2>
+                <p class="section-subtitle">
+                    Comprehensive digital solutions tailored to your unique business needs
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- 1. Digital Marketing -->
+                <a href="digital-marketing.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">📱</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Digital Marketing.</h3>
+                        <p style="text-decoration: none;">Complete digital marketing solutions for all types of businesses including Social Media, SEO, Google Ads, and automation. Increase online visibility, attract more customers, and boost revenue with performance-driven strategies.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 2. Web Design -->
+                <a href="website-development.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">💻</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Web Design.</h3>
+                        <p style="text-decoration: none;">Modern, responsive, and SEO-friendly website designs built to engage visitors and convert them into customers. We create clean UI/UX for business, portfolio, landing pages, and e-commerce.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 3. Software -->
+                <a href="software.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🧾</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Software.</h3>
+                        <p style="text-decoration: none;">Business software solutions like billing, inventory, restaurant, hotel, clinic, and office management systems to streamline operations and boost productivity.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 4. Graphic Designing -->
+                <a href="graphic-designing.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🎨</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Graphic Designing.</h3>
+                        <p style="text-decoration: none;">Strategic branding and creative design solutions to build powerful business identity. From logo creation to marketing materials and social media creatives, we design visuals that strengthen trust and accelerate brand growth.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 5. Automation AI -->
+                <a href="automation-ai.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🤖</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Automation AI.</h3>
+                        <p style="text-decoration: none;">Automation solutions like email marketing, bulk mail, WhatsApp marketing, and AI chat automation to save time and increase sales with smart workflows.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- 4. Mobile & Desktop Application -->
+                <!-- <a href="app-development.html" class="service-card modern-service" style="text-decoration: none;">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🚀</span>
+                    </div>
+                    <div class="service-content" style="text-decoration: none;">
+                        <h3 style="text-decoration: none;">Mobile &amp; Desktop Application Development</h3>
+                        <p style="text-decoration: none;">Custom apps for mobile and desktop that streamline operations and improve customer experience. We build secure, scalable software with intuitive UI/UX and reliable support.</p>
+                        <span class="service-link" style="text-decoration: none;">
+                            Learn More <span>→</span>
+                        </span>
+                    </div>
+                </a>-->
+             </div> 
+            
+            <div class="service-overview-cta reveal">
+                <a href="services.html" class="btn-primary">
+                    Explore All Services
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Best Scoring Experience Section -->
+    <!-- <section class="scoring-experience reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    World Best <span class="gradient-text">Scoring Experience</span>
+                </h2>
+                <p class="section-subtitle">
+                    Recognized excellence in digital solutions and client satisfaction
+                </p>
+            </div>
+            
+            <div class="scoring-grid">
+                <div class="scoring-card glass-card reveal-item">
+                    <div class="scoring-icon">🏆</div>
+                    <div class="scoring-number">98%</div>
+                    <div class="scoring-label">Client Satisfaction</div>
+                    <p>Our clients consistently rate our services as exceptional, reflecting our commitment to quality and results.</p>
+                </div>
+                
+                <div class="scoring-card glass-card reveal-item">
+                    <div class="scoring-icon">⭐</div>
+                    <div class="scoring-number">4.9/5</div>
+                    <div class="scoring-label">Average Rating</div>
+                    <p>Across all major review platforms, we maintain an outstanding reputation for excellence.</p>
+                </div>
+                
+                <div class="scoring-card glass-card reveal-item">
+                    <div class="scoring-icon">🚀</div>
+                    <div class="scoring-number">500+</div>
+                    <div class="scoring-label">Successful Projects</div>
+                    <p>Over 500 successful projects delivered with measurable business impact for our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Why Choose <span class="gradient-text">Us</span>
+                </h2>
+                <p class="section-subtitle">
+                    We combine expertise, innovation, and dedication to deliver exceptional results for your business
+                </p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-blue">
+                        <span class="reason-icon">🎯</span>
+                    </div>
+                    <h3>Dedicated Project Handling</h3>
+                    <p>Direct communication with core team members ensuring clarity, focus, and personalized project execution.</p>
+                </div>
+                
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-purple">
+                        <span class="reason-icon">🚀</span>
+                    </div>
+                    <h3>Conversion-Focused Development</h3>
+                    <p>We build strategic websites designed to generate leads and increase measurable business growth.</p>
+                </div>
+                
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-green">
+                        <span class="reason-icon">⚡</span>
+                    </div>
+                    <h3>Fast & Agile Execution</h3>
+                    <p>Quick turnaround times with flexible revisions and efficient project management processes.</p>
+                </div>
+                
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-orange">
+                        <span class="reason-icon">📊</span>
+                    </div>
+                    <h3>Transparent Workflow</h3>
+                    <p>Clear timelines, milestone tracking, and consistent updates throughout every project phase.</p>
+                </div>
+                
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-indigo">
+                        <span class="reason-icon">📈</span>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>Digital systems built to adapt and grow alongside your expanding business needs.</p>
+                </div>
+                
+                <div class="reason-card modern-reason">
+                    <div class="reason-icon-wrapper gradient-pink">
+                        <span class="reason-icon">💰</span>
+                    </div>
+                    <h3>Value-Driven Pricing</h3>
+                    <p>Affordable pricing models delivering maximum value without compromising quality or performance.</p>
+                </div>
+            </div>
+
+            <!-- <div class="reasons-metrics">
+                <div class="metric-pill">
+                    <span class="metric-value">500+</span>
+                    <span class="metric-label">Projects Delivered</span>
+                </div>
+                <div class="metric-pill">
+                    <span class="metric-value">4.9/5</span>
+                    <span class="metric-label">Average Rating</span>
+                </div>
+                <div class="metric-pill">
+                    <span class="metric-value">24h</span>
+                    <span class="metric-label">Response Time</span>
+                </div>
+                <div class="metric-pill">
+                    <span class="metric-value">100%</span>
+                    <span class="metric-label">Transparent Reporting</span>
+                </div>
+            </div> -->
+
+            <div class="reasons-cta">
+                <div class="cta-copy">
+                    <h3>Want results you can measure?</h3>
+                    <p>Let’s build a clear, result-driven strategy that increases visibility, generates quality leads, and supports long-term growth.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn-primary">Get Free Consultation <span class="arrow">→</span></a>
+                    <a href="services.html" class="btn-outline">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our Work <span class="gradient-text">Process</span>
+                </h2>
+                <p class="section-subtitle">
+                    A structured process focused on clarity, execution, and measurable results
+                </p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon gradient-blue">🔍</div>
+                    <h3>Discovery & Research</h3>
+                    <p>We analyze your business goals, target audience, and competitors to build a strong strategic foundation.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon gradient-purple">📋</div>
+                    <h3>Strategy & Planning</h3>
+                    <p>We create a clear roadmap with defined milestones, timelines, and actionable deliverables.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon gradient-green">🎨</div>
+                    <h3>Design & Development</h3>
+                    <p>We design modern interfaces and develop responsive, scalable digital solutions.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon gradient-orange">🚀</div>
+                    <h3>Launch & Optimize</h3>
+                    <p>After testing, we launch your project and continuously monitor performance for improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <!-- <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Success <span class="gradient-text">Stories</span>
+                </h2>
+                <p class="section-subtitle">
+                    Real results from real businesses we've partnered with
+                </p>
+            </div>
+            
+            <div class="success-grid">
+                <div class="success-card glass-card">
+                    <div class="success-icon">📈</div>
+                    <div class="success-metric">
+                        <span class="metric-number">300%</span>
+                        <span class="metric-label">Traffic Increase</span>
+                    </div>
+                    <h3>E-Commerce Success</h3>
+                    <p>Helped an online retailer triple their website traffic and double sales within 6 months through strategic SEO and digital marketing.</p>
+                    <div class="success-tags">
+                        <span class="tag">SEO</span>
+                        <span class="tag">Digital Marketing</span>
+                    </div>
+                </div>
+
+                <div class="success-card glass-card">
+                    <div class="success-icon">💰</div>
+                    <div class="success-metric">
+                        <span class="metric-number">250%</span>
+                        <span class="metric-label">Lead Generation</span>
+                    </div>
+                    <h3>B2B Lead Growth</h3>
+                    <p>Transformed a B2B company's lead generation with a custom CRM system and automated marketing campaigns.</p>
+                    <div class="success-tags">
+                        <span class="tag">CRM Development</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="success-card glass-card">
+                    <div class="success-icon">⭐</div>
+                    <div class="success-metric">
+                        <span class="metric-number">4.9/5</span>
+                        <span class="metric-label">App Store Rating</span>
+                    </div>
+                    <h3>Mobile App Excellence</h3>
+                    <p>Developed a feature-rich mobile app that achieved 100K+ downloads and exceptional user ratings in just 3 months.</p>
+                    <div class="success-tags">
+                        <span class="tag">Mobile Development</span>
+                        <span class="tag">UX Design</span>
+                    </div>
+                </div>
+
+                <div class="success-card glass-card">
+                    <div class="success-icon">🎯</div>
+                    <div class="success-metric">
+                        <span class="metric-number">180%</span>
+                        <span class="metric-label">ROI Improvement</span>
+                    </div>
+                    <h3>Brand Transformation</h3>
+                    <p>Complete brand redesign and digital presence overhaul resulted in significant increase in brand recognition and customer engagement.</p>
+                    <div class="success-tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Web Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-cta">
+                <a href="portfolio.html" class="btn-secondary">
+                    View All Success Stories
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-icon">🚀</div>
+                <h2>Let's Build Your Digital Success Today</h2>
+                <p>Ready to take your business to the next level? Get in touch with our team and let's discuss how we can help you achieve your goals.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-white">
+                        Start Your Project
+                        <span class="arrow">→</span>
+                    </a>
+                    <a href="services.html" class="btn-outline">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #0f1729;">
+        <div class="footer-bg" style="display: none;">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
+                        <h2 class="gradient-text">MS Digital World</h2>
+                    </a>
+                    <p style="margin-bottom: 1.5rem;">We build scalable digital solutions that help businesses grow online with clarity and confidence.</p>
+
+               
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>info@msdigitalworld.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+91 9692727491 / 8112161993</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Puri, Odisha, India 752001</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <!-- <li><a href="services.html">Mobile App Development</a></li> -->
+                        <li><a href="services.html">Graphic Designing</a></li>
+                        <li><a href="services.html">Software Development</a></li>
+                        <li><a href="services.html">Social Media Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for digital insights and updates.</p>
+                    <form class="newsletter-form" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <input type="email" placeholder="Enter your email" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-size: 0.9rem; outline: none;">
+                        <button type="submit" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #0f1729; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 MS Digital World. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faqs.html">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script defer src="js/main.js"></script>
 </body>
 </html>
