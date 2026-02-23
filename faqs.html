@@ -3,63 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs - MS Digital World</title>
-    <meta name="description" content="Frequently Asked Questions about MS Digital World. Find answers to common queries about our services.">
+    <title>MS Digital World - Premium Digital Agency</title>
+    <meta name="description" content="MS Digital World - Leading digital agency offering digital marketing, web development, mobile apps, and graphic designing services.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <style>
-        .faq-container {
-            padding: 5rem 0;
-        }
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .faq-item {
-            padding: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .faq-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.12);
-        }
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            font-size: 1.125rem;
-            color: #fff;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s ease-in-out;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.6;
-            margin-top: 0;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-            margin-top: 1rem;
-        }
-        .faq-icon {
-            transition: transform 0.4s;
-            font-size: 1.25rem;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
+        .dropdown:hover .dropdown-menu {
+            display: flex !important;
         }
     </style>
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
@@ -69,48 +30,109 @@
                     <span class="gradient-text logo-text">MS Digital World</span>
                 </a>
                 
-                <div class="nav-links" id="navLinks">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
+                <div class="nav-links" id="navLinks" style="display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap !important; white-space: nowrap !important; justify-content: flex-end;">
+                    <a href="index.html" class="nav-link active" style="white-space: nowrap !important; font-size: 0.95rem !important;">Home</a>
+                    <a href="about.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">About</a>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Digital Marketing</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
+                        <a href="digital-marketing.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Digital Marketing</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Web Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
+                        <a href="web-design.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Web Design</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <span class="dropdown-toggle">Graphic Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Creatives</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Marketing Collateral</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographic Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Motion Graphics & Video Editing</a>
+                        <a href="software.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Software</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Retail Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Wholesale Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Production Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hotel &amp; Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">AC Service Centre Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Retail Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Distributor and Whole Sale Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hospital Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Office Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">MLM Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Saloon and Spa Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Education Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Examination Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Bakery Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Employee Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pathology Lab Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Billing and Account Software</a>
                         </div>
                     </div>
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="testimonials.html" class="nav-link">Testimonials</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <div class="dropdown">
+                        <a href="graphic-designing.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Graphic Designing</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 360px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Business Card Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Letterhead Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Flyer Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Poster Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brochure Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Banner Design (Online &amp; Offline)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pamphlet Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Catalog Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Leaflet Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Advertisements</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Point-of-Sale (POS) Display Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Event / Exhibition Stand Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographics Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Artwork / Illustrations</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Digital Painting &amp; Vector Art</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Book / Magazine Cover Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Product Label &amp; Sticker Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Icon &amp; Graphic Sets</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Newsletter Creative Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Presentation / Pitch Deck Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Creative Campaign Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Branding Consultation</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Instagram / Facebook Posts Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ad Banner Design (FB, Instagram, Google Ads)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">YouTube Thumbnail Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Reels / Short Video Graphics</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Cover/Banner Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Story &amp; Highlight Cover Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Carousel Post Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Animated Social Media Creatives</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Infographics</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Branded Social Media Templates</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="automation-AI.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Automation AI</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">email automatically send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">bulk mail send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp chat AI</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp offer promotion</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp bulk msg send</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">Contact</a>
+
                 </div>
                 
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -208,9 +230,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-bg">
+     <!-- Footer -->
+    <footer class="footer" style="background: #0f1729;">
+        <div class="footer-bg" style="display: none;">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
         </div>
@@ -219,9 +241,11 @@
                 <div class="footer-col footer-about">
                     <a href="index.html" class="footer-logo">
                         <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
-                        <h3 class="gradient-text">MS Digital World</h3>
+                        <h2 class="gradient-text">MS Digital World</h2>
                     </a>
-                    <p>Your trusted partner for digital transformation. We help businesses grow with cutting-edge technology and creative solutions.</p>
+                    <p style="margin-bottom: 1.5rem;">We build scalable digital solutions that help businesses grow online with clarity and confidence.</p>
+
+               
                     <div class="footer-contact">
                         <div class="contact-item">
                             <span>📧</span>
@@ -233,7 +257,7 @@
                         </div>
                         <div class="contact-item">
                             <span>📍</span>
-                            <span>Luhagada Jaga, Tiadi sahi, Puri, Odisha, India 752002</span>
+                            <span>Puri, Odisha, India 752001</span>
                         </div>
                     </div>
                 </div>
@@ -241,12 +265,11 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html">Digital Marketing</a></li>
-                        <li><a href="services.html">Web Development</a></li>
-                        <li><a href="services.html">Mobile App Development</a></li>
-                        <li><a href="services.html">Graphic Designing</a></li>
-                        <li><a href="services.html">Software Development</a></li>
-                        <li><a href="services.html">Social Media Marketing</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                        <li><a href="software.html">Software</a></li>
+                        <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                        <li><a href="automation-AI.html">Automation AI</a></li>
                     </ul>
                 </div>
                 
@@ -255,20 +278,18 @@
                     <ul>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="portfolio.html">Our Portfolio</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="help-center.html">Help Center</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="help-center.html">Help Center</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                    </ul>
+                    <h4>Stay Updated</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for digital insights and updates.</p>
+                    <form class="newsletter-form" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <input type="email" placeholder="Enter your email" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-size: 0.9rem; outline: none;">
+                        <button type="submit" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #0f1729; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Subscribe</button>
+                    </form>
                 </div>
             </div>
             
@@ -290,29 +311,13 @@
                 <div class="footer-legal">
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Service</a>
+                    <a href="faqs.html">FAQs</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script>
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                // Close all other items
-                document.querySelectorAll('.faq-item').forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                });
-                
-                // Toggle current item
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <!-- JavaScript -->
+    <script defer src="js/main.js"></script>
 </body>
 </html>
-

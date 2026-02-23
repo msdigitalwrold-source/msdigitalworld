@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - MS Digital World</title>
-    <meta name="description" content="Get in touch with MS Digital World. Let's discuss how we can help transform your business.">
+    <title>MS Digital World - Premium Digital Agency</title>
+    <meta name="description" content="MS Digital World - Leading digital agency offering digital marketing, web development, mobile apps, and graphic designing services.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: flex !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-
+    
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
@@ -139,400 +144,170 @@
         </div>
     </nav>
 
-    <!-- Contact Hero -->
-    <section class="contact-hero">
-        <div class="hero-bg">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-        </div>
-
-        <div class="container">
-            <div class="contact-hero-grid">
-                <div class="contact-hero-copy">
-                    <div class="badge">
-                        <span class="sparkles">✨</span>
-                        <span class="badge-text">Trusted by Businesses Across India</span>
-                    </div>
-
-                    <h1 class="contact-hero-title modern-heading">
-                        Let’s Build Your <span class="gradient-text">Digital Success Story</span>
+    <!-- 1. CONTACT FORM SECTION -->
+    <main>
+        <section style="padding: 5rem 0 3rem 0; background: radial-gradient(circle at top, rgba(79, 70, 229, 0.25), transparent 55%), #020617;">
+            <div class="container">
+                <div style="text-align: center; max-width: 50rem; margin: 0 auto 2rem auto;">
+                    <h1 style="font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1.1; margin-bottom: 1rem; color: #e5e7eb;">
+                        Get in Touch
                     </h1>
-                    <p class="contact-hero-subtitle">
-                        Partner with MS Digital World to transform your online presence. From SEO and digital marketing to custom websites and mobile apps — we deliver measurable results for businesses in Odisha and across India.
+                    <p style="color: #9ca3af; font-size: 1rem; line-height: 1.7;">
+                        Fill out the form below and we'll get back to you within 
+                        <span style="color: #a4d43a; font-weight: 600;">24 hours</span>
                     </p>
-
-                    <div class="contact-hero-actions">
-                        <a href="#contactForm" class="btn-primary modern-hover">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
-                            </svg>
-                            <span>Get Free Consultation</span>
-                        </a>
-                        <a href="services.html" class="btn-outline modern-hover">Explore Services</a>
-                    </div>
-
-                    <div class="contact-hero-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-value">24h</div>
-                            <div class="highlight-label">Expert Response</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-value">500+</div>
-                            <div class="highlight-label">Projects Delivered</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-value">98%</div>
-                            <div class="highlight-label">Client Satisfaction</div>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="contact-hero-card glass-card">
-                    <h3>Quick Contact</h3>
-                    <p>Choose the fastest way to reach us. You can also send a message using the form.</p>
-
-                    <div class="contact-methods">
-                        <a class="contact-method" href="mailto:info@msdigitalworld.in">
-                            <div class="method-icon">📧</div>
-                            <div class="method-text">
-                                <div class="method-title">Email</div>
-                                <div class="method-value">info@msdigitalworld.in</div>
+                <div style="max-width: 55rem; margin: 0 auto;">
+                    <div style="background: rgba(15, 23, 42, 0.95); border-radius: 1.25rem; padding: 2rem 2.5rem; border: 1px solid rgba(148, 163, 184, 0.45); box-shadow: 0 24px 60px rgba(15, 23, 42, 0.8);">
+                        <form action="#" method="post" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem;">
+                            <div style="grid-column: span 1;">
+                                <label for="name" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none;">
                             </div>
-                            <div class="method-cta">→</div>
-                        </a>
-                        <a class="contact-method" href="tel:+919692727491">
-                            <div class="method-icon">📞</div>
-                            <div class="method-text">
-                                <div class="method-title">Call</div>
-                                <div class="method-value">+91 9692727491</div>
+                            <div style="grid-column: span 1;">
+                                <label for="email" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="name@company.com" style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none;">
                             </div>
-                            <div class="method-cta">→</div>
-                        </a>
-                        <a class="contact-method" href="https://wa.me/919692727491">
-                            <div class="method-icon">💬</div>
-                            <div class="method-text">
-                                <div class="method-title">WhatsApp</div>
-                                <div class="method-value">Chat with our team</div>
+                            <div style="grid-column: span 1;">
+                                <label for="phone" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Phone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91" style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none;">
                             </div>
-                            <div class="method-cta">→</div>
-                        </a>
-                        <div class="contact-method" aria-label="Office location">
-                            <div class="method-icon">📍</div>
-                            <div class="method-text">
-                                <div class="method-title">Location</div>
-                                <div class="method-value">Puri, Odisha, India</div>
+                            <div style="grid-column: span 1;">
+                                <label for="service" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Service Interested In *</label>
+                                <select id="service" name="service" required style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none; cursor: pointer;">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                    <option value="web-design">Web Design & Development</option>
+                                    <option value="software">Software Solutions</option>
+                                    <option value="graphic-design">Graphic Designing</option>
+                                    <option value="automation-ai">Automation & AI</option>
+                                    <option value="other">Other / Not sure</option>
+                                </select>
                             </div>
-                            <div class="method-cta">•</div>
-                        </div>
+                            <div style="grid-column: span 2;">
+                                <label for="budget" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Approximate Budget</label>
+                                <select id="budget" name="budget" style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none; cursor: pointer;">
+                                    <option value="" selected>Choose a budget range (optional)</option>
+                                    <option value="below-25k">Below ₹25,000</option>
+                                    <option value="25-50k">₹25,000 - ₹50,000</option>
+                                    <option value="50-100k">₹50,000 - ₹100,000</option>
+                                    <option value="above-100k">Above ₹100,000</option>
+                                </select>
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <label for="message" style="display: block; font-size: .85rem; color: #9ca3af; margin-bottom: .4rem; font-weight: 500;">Project Details *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project, goals, and timeline..." style="width: 100%; padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.6); background: rgba(15, 23, 42, 0.9); color: #e5e7eb; font-size: .95rem; outline: none; resize: vertical;"></textarea>
+                            </div>
+                            <div style="grid-column: span 2; display: flex; align-items: center; gap: .6rem; font-size: .85rem; color: #9ca3af;">
+                                <input type="checkbox" id="whatsapp" name="whatsapp" checked style="width: 1.1rem; height: 1.1rem; cursor: pointer;">
+                                <label for="whatsapp" style="cursor: pointer;">Contact me on WhatsApp for faster response</label>
+                            </div>
+                            <div style="grid-column: span 2;">
+                                <button type="submit" style="width: 100%; padding: 1rem 2rem; border-radius: .7rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: .5rem;">
+                                    <span>Submit Enquiry</span>
+                                    <span style="font-size: 1.2rem;">→</span>
+                                </button>
+                            </div>
+                            <p style="grid-column: span 2; text-align: center; font-size: .75rem; color: #6b7280; margin: 0;">
+                                By submitting, you agree to our <a href="privacy.html" style="color: #a4d43a; text-decoration: none;">Privacy Policy</a>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Trust Badges Section -->
-    <section class="contact-trust">
-        <div class="container">
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <div class="trust-badge-icon">🏆</div>
-                    <span>500+ Projects Completed</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-badge-icon">⭐</div>
-                    <span>98% Client Satisfaction</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-badge-icon">🛡️</div>
-                    <span>Secure & Confidential</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-badge-icon">⚡</div>
-                    <span>24 Hour Response Time</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-badge-icon">🎯</div>
-                    <span>Results Driven Approach</span>
+        <!-- 2. WHY WORK WITH US -->
+        <section style="padding: 3rem 0; background: #0a0f1c; border-top: 1px solid rgba(148, 163, 184, 0.1);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem;">
+                    <div style="text-align: center; padding: 1.5rem 1rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.2);">
+                        <div style="font-size: 2.5rem; margin-bottom: .5rem;">⚡</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .4rem; font-weight: 600;">Fast Response</h3>
+                        <p style="font-size: .85rem; color: #9ca3af; margin: 0;">Reply within 24 hours guaranteed</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem 1rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.2);">
+                        <div style="font-size: 2.5rem; margin-bottom: .5rem;">💰</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .4rem; font-weight: 600;">No Hidden Charges</h3>
+                        <p style="font-size: .85rem; color: #9ca3af; margin: 0;">Transparent pricing always</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem 1rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.2);">
+                        <div style="font-size: 2.5rem; margin-bottom: .5rem;">👨‍💼</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .4rem; font-weight: 600;">Dedicated Manager</h3>
+                        <p style="font-size: .85rem; color: #9ca3af; margin: 0;">Single point of contact</p>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem 1rem; border-radius: 1rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.2);">
+                        <div style="font-size: 2.5rem; margin-bottom: .5rem;">🛠️</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .4rem; font-weight: 600;">Lifetime Support</h3>
+                        <p style="font-size: .85rem; color: #9ca3af; margin: 0;">We're here even after delivery</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Form + Trust -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-form-container glass-card">
-                    <div class="form-header">
-                        <h2>Start Your Project</h2>
-                        <p>Fill out the form below and our team will reach out within 24 hours with a tailored strategy for your business.</p>
+        <!-- 3. HOW IT WORKS -->
+        <section style="padding: 4rem 0; background: #020617;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2.5rem;">
+                    <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">How It Works</h2>
+                    <p style="color: #9ca3af; font-size: .95rem;">Simple 3-step process to get started</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; position: relative;">
+                    <div style="position: absolute; top: 2.5rem; left: 20%; right: 20%; height: 2px; background: linear-gradient(90deg, #a4d43a, #4db8b8); opacity: 0.3;"></div>
+                    
+                    <div style="text-align: center; position: relative; z-index: 1;">
+                        <div style="width: 5rem; height: 5rem; border-radius: 50%; background: linear-gradient(135deg, #a4d43a, #4db8b8); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.8rem; font-weight: 700; color: #020617;">1</div>
+                        <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Share Requirements</h3>
+                        <p style="font-size: .9rem; color: #9ca3af; line-height: 1.6; margin: 0;">Fill the form or WhatsApp us your project details and goals</p>
                     </div>
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <div class="input-wrapper">
-                                    <span class="input-icon">👤</span>
-                                    <input type="text" id="name" name="name" required placeholder="John Doe">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <div class="input-wrapper">
-                                    <span class="input-icon">📧</span>
-                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <div class="input-wrapper">
-                                    <span class="input-icon">📞</span>
-                                    <input type="tel" id="phone" name="phone" required placeholder="+91 96927 27491">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Service Required *</label>
-                                <div class="input-wrapper">
-                                    <span class="input-icon">🎯</span>
-                                    <select id="service" name="service" required>
-                                        <option value="">Select a service</option>
-                                        <option value="digital-marketing">Digital Marketing</option>
-                                        <option value="website-development">Website Development</option>
-                                        <option value="mobile-app">Mobile App Development</option>
-                                        <option value="graphic-design">Graphic Designing</option>
-                                        <option value="seo">SEO Services</option>
-                                        <option value="social-media">Social Media Marketing</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="message">Project Details</label>
-                            <div class="input-wrapper">
-                                <span class="input-icon textarea-icon">💬</span>
-                                <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, goals, and timeline..."></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="checkbox-wrapper">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <span class="checkmark"></span>
-                                Send me updates about MS Digital World services and offers
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn-primary submit-btn modern-hover">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
-                            </svg>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-
-                    <!-- Form Success Message -->
-                    <div id="formSuccess" class="form-success">
-                        <div class="form-success-icon">✓</div>
-                        <h3>Message Sent Successfully!</h3>
-                        <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+                    <div style="text-align: center; position: relative; z-index: 1;">
+                        <div style="width: 5rem; height: 5rem; border-radius: 50%; background: linear-gradient(135deg, #a4d43a, #4db8b8); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.8rem; font-weight: 700; color: #020617;">2</div>
+                        <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Get Strategy & Quote</h3>
+                        <p style="font-size: .9rem; color: #9ca3af; line-height: 1.6; margin: 0;">We analyze your needs and send a tailored proposal with timeline</p>
+                    </div>
+                    <div style="text-align: center; position: relative; z-index: 1;">
+                        <div style="width: 5rem; height: 5rem; border-radius: 50%; background: linear-gradient(135deg, #a4d43a, #4db8b8); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.8rem; font-weight: 700; color: #020617;">3</div>
+                        <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">We Execute & Deliver</h3>
+                        <p style="font-size: .9rem; color: #9ca3af; line-height: 1.6; margin: 0;">Start the project with regular updates and final delivery</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-aside glass-card">
-                    <h2>Let's Connect</h2>
-                    <p>We're available Monday through Saturday to discuss your project and answer any questions.</p>
-
-                    <div class="hours-grid">
-                        <div class="hours-item">
-                            <div class="hours-day">Mon - Sat</div>
-                            <div class="hours-time">9:00 AM - 7:00 PM</div>
-                        </div>
-                        <div class="hours-item">
-                            <div class="hours-day">Sunday</div>
-                            <div class="hours-time">Closed</div>
-                        </div>
+        <!-- 4. CONTACT DETAILS -->
+        <section style="padding: 3rem 0 4rem 0; background: #0a0f1c; border-top: 1px solid rgba(148, 163, 184, 0.1);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.6rem; color: #e5e7eb; margin-bottom: .5rem;">Contact Details</h2>
+                    <p style="color: #9ca3af; font-size: .95rem;">Multiple ways to reach us</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; max-width: 60rem; margin: 0 auto;">
+                    <div style="border-radius: 1rem; border: 1px solid rgba(31, 41, 55, 1); padding: 1.5rem; background: rgba(15, 23, 42, 0.9); text-align: center;">
+                        <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(79, 70, 229, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">📞</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .75rem;">Phone</h3>
+                        <p style="font-size: .95rem; color: #a4d43a; font-weight: 600; margin: 0 0 .25rem 0;">+91 9692727491</p>
+                        <p style="font-size: .95rem; color: #a4d43a; font-weight: 600; margin: 0;">+91 8112161993</p>
                     </div>
-
-                    <div class="contact-aside-cta">
-                        <a href="tel:+919692727491" class="btn-outline modern-hover">Call Now</a>
-                        <a href="https://wa.me/919692727491" class="btn-primary modern-hover">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
-                            </svg>
-                            <span>WhatsApp</span>
+                    <div style="border-radius: 1rem; border: 1px solid rgba(31, 41, 55, 1); padding: 1.5rem; background: rgba(15, 23, 42, 0.9); text-align: center;">
+                        <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(52, 211, 153, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">📧</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .75rem;">Email</h3>
+                        <p style="font-size: .95rem; color: #4db8b8; font-weight: 600; margin: 0;">info@msdigitalworld.in</p>
+                        <a href="https://wa.me/919692727491" target="_blank" style="display: inline-flex; align-items: center; gap: .4rem; margin-top: .75rem; padding: .5rem 1rem; background: #22c55e; color: #022c22; border-radius: 999px; font-size: .85rem; font-weight: 600; text-decoration: none;">
+                            💬 Chat on WhatsApp
                         </a>
                     </div>
-
-                    <div class="contact-aside-note">
-                        <strong>Office:</strong> Luhagada Jaga, Tiadi sahi, Puri, Odisha, India 752002
+                    <div style="border-radius: 1rem; border: 1px solid rgba(31, 41, 55, 1); padding: 1.5rem; background: rgba(15, 23, 42, 0.9); text-align: center;">
+                        <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(248, 250, 252, 0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">📍</div>
+                        <h3 style="font-size: 1rem; color: #e5e7eb; margin-bottom: .75rem;">Office</h3>
+                        <p style="font-size: .95rem; color: #e5e7eb; margin: 0 0 .25rem 0;">Puri, Odisha, India</p>
+                        <p style="font-size: .85rem; color: #9ca3af; margin: 0;">752001</p>
+                        <p style="font-size: .8rem; color: #6b7280; margin-top: .5rem;">Mon - Sat: 10AM - 7PM IST</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="contact-content reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What You Can <span class="gradient-text">Expect</span></h2>
-                <p class="section-subtitle">Professional partnership, transparent communication, and results that drive real business growth.</p>
-            </div>
-
-            <div class="contact-expect-grid">
-                <div class="expect-card glass-card">
-                    <h3>Business-first Strategy</h3>
-                    <p>We start with your goals and audience, then build a plan around what will grow traffic, leads, and sales. From SEO audits and competitor research to campaign planning, we focus on high-impact actions.</p>
-                </div>
-                <div class="expect-card glass-card">
-                    <h3>Modern Design & Development</h3>
-                    <p>We create responsive websites, landing pages, e-commerce stores, and web apps that load fast, look premium, and convert visitors into customers.</p>
-                </div>
-                <div class="expect-card glass-card">
-                    <h3>SEO & Performance Optimization</h3>
-                    <p>We optimize your site for search engines and users: technical SEO, on-page SEO, local SEO, speed improvements, and conversion rate optimization for better rankings and better results.</p>
-                </div>
-                <div class="expect-card glass-card">
-                    <h3>Reporting & Support</h3>
-                    <p>You get straightforward reporting and updates. We track what matters—leads, calls, sales, and ROI—so you always know where you stand.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-service-areas reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Solutions We <span class="gradient-text">Deliver</span></h2>
-                <p class="section-subtitle">Comprehensive digital services designed to grow your brand, drive traffic, and increase revenue.</p>
-            </div>
-
-            <div class="service-areas-grid">
-                <a href="digital-marketing.html" class="area-card glass-card">
-                    <div class="area-icon">📱</div>
-                    <h3>Digital Marketing</h3>
-                    <p>Complete digital marketing solutions for all types of businesses including Social Media, SEO, Google Ads, and automation. Increase online visibility, attract more customers, and boost revenue with performance-driven strategies.</p>
-                    <span class="area-link">Learn More <span>→</span></span>
-                </a>
-                <a href="website-development.html" class="area-card glass-card">
-                    <div class="area-icon">💻</div>
-                    <h3>Web Design</h3>
-                    <p>Modern, responsive, and SEO-friendly website designs built to engage visitors and convert them into customers. We create clean UI/UX for business, portfolio, landing pages, and e-commerce.</p>
-                    <span class="area-link">Learn More <span>→</span></span>
-                </a>
-                <a href="software.html" class="area-card glass-card">
-                    <div class="area-icon">🧾</div>
-                    <h3>Software</h3>
-                    <p>Business software solutions like billing, inventory, restaurant, hotel, clinic, and office management systems to streamline operations and boost productivity.</p>
-                    <span class="area-link">Learn More <span>→</span></span>
-                </a>
-                <a href="graphic-designing.html" class="area-card glass-card">
-                    <div class="area-icon">🎨</div>
-                    <h3>Graphic Designing</h3>
-                    <p>Strategic branding and creative design solutions to build powerful business identity. From logo creation to marketing materials and social media creatives, we design visuals that strengthen trust and accelerate brand growth.</p>
-                    <span class="area-link">Learn More <span>→</span></span>
-                </a>
-                <a href="automation-ai.html" class="area-card glass-card">
-                    <div class="area-icon">🤖</div>
-                    <h3>Automation AI</h3>
-                    <p>Automation solutions like email marketing, bulk mail, WhatsApp marketing, and AI chat automation to save time and increase sales with smart workflows.</p>
-                    <span class="area-link">Learn More <span>→</span></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-process reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Proven <span class="gradient-text">Process</span></h2>
-                <p class="section-subtitle">A streamlined approach that ensures clarity, quality, and results at every stage.</p>
-            </div>
-
-            <div class="process-grid">
-                <div class="process-card">
-                    <div class="process-badge">1</div>
-                    <h3>Discovery Call</h3>
-                    <p>We understand your business, audience, competitors, and goals. You share requirements and timelines.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-badge">2</div>
-                    <h3>Proposal & Roadmap</h3>
-                    <p>We share a clear scope, pricing, deliverables, and milestones—no confusion, no hidden surprises.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-badge">3</div>
-                    <h3>Build & Launch</h3>
-                    <p>Design, development, and implementation. We test thoroughly and launch with best practices.</p>
-                </div>
-                <div class="process-card">
-                    <div class="process-badge">4</div>
-                    <h3>Optimize & Grow</h3>
-                    <p>After launch, we improve performance and results using SEO, analytics, and conversion optimization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-faq reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-                <p class="section-subtitle">Everything you need to know before starting your project with us.</p>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How soon will you reply?</h3>
-                    <p>We typically respond within 24 hours. For urgent requests, you can call us directly for faster coordination.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do you work with small businesses?</h3>
-                    <p>Yes. We work with startups, local businesses, and established brands. We recommend the right package based on your goals and budget.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Can you handle SEO + website together?</h3>
-                    <p>Absolutely. Many clients choose a combined website + SEO plan because it improves both rankings and conversions.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What details should I include in the form?</h3>
-                    <p>Share your business type, target location, services you need, current website/social links (if any), goals, and timeline.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do you provide ongoing support?</h3>
-                    <p>Yes. We offer maintenance, performance monitoring, SEO support, creative updates, and campaign management.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Where are you located?</h3>
-                    <p>We’re based in Puri, Odisha, India, and we work with clients across India and globally.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-final-cta reveal">
-        <div class="container">
-            <div class="final-cta-card">
-                <div class="final-cta-copy">
-                    <h3>Ready to Transform Your Digital Presence?</h3>
-                    <p>Join 500+ businesses across India who trust MS Digital World for SEO, digital marketing, website development, and branding solutions that deliver measurable growth.</p>
-                </div>
-                <div class="final-cta-actions">
-                    <a href="#contactForm" class="btn-primary modern-hover">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
-                        </svg>
-                        <span>Get Free Consultation</span>
-                    </a>
-                    <a href="services.html" class="btn-outline modern-hover">View Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer" style="background: #0f1729;">
@@ -600,7 +375,7 @@
             <div class="footer-divider"></div>
             
             <div class="footer-bottom">
-                <p>© 2026 MS Digital World. All rights reserved.</p>
+                <p> 2026 MS Digital World. All rights reserved.</p>
                 <div class="social-links">
                     <a href="#" aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -621,67 +396,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
-
-    <!-- Contact Page Scripts -->
-    <script>
-        // Scroll Reveal Animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            const revealOnScroll = () => {
-                reveals.forEach(element => {
-                    const windowHeight = window.innerHeight;
-                    const elementTop = element.getBoundingClientRect().top;
-                    const revealPoint = 150;
-                    
-                    if (elementTop < windowHeight - revealPoint) {
-                        element.classList.add('active');
-                    }
-                });
-            };
-            
-            window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll(); // Initial check
-
-            // Form Handling
-            const contactForm = document.getElementById('contactForm');
-            const formSuccess = document.getElementById('formSuccess');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Simulate form submission
-                    const submitBtn = contactForm.querySelector('.submit-btn');
-                    const originalText = submitBtn.innerHTML;
-                    
-                    submitBtn.innerHTML = '<span>Sending...</span>';
-                    submitBtn.disabled = true;
-                    
-                    setTimeout(() => {
-                        contactForm.style.display = 'none';
-                        formSuccess.classList.add('show');
-                    }, 1500);
-                });
-            }
-
-            // Smooth Scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
-
-

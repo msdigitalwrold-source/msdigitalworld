@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Designing Services - MS Digital World</title>
-    <meta name="description" content="Graphic designing services by MS Digital World: branding, logo design, social media creatives, and marketing collateral.">
-
+    <title>MS Digital World - Premium Digital Agency</title>
+    <meta name="description" content="MS Digital World - Leading digital agency offering digital marketing, web development, mobile apps, and graphic designing services.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: flex !important;
+        }
+    </style>
 </head>
 <body>
+    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-
+    
+    <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container">
             <div class="nav-content">
@@ -21,51 +29,112 @@
                     <img src="images/Logo.png" alt="MS Digital World Logo" class="logo-img">
                     <span class="gradient-text logo-text">MS Digital World</span>
                 </a>
+                
+                <div class="nav-links" id="navLinks" style="display: flex; align-items: center; gap: 1rem; flex-wrap: nowrap !important; white-space: nowrap !important; justify-content: flex-end;">
+                    <a href="index.html" class="nav-link active" style="white-space: nowrap !important; font-size: 0.95rem !important;">Home</a>
+                    <a href="about.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">About</a>
+                    <div class="dropdown">
+                        <a href="digital-marketing.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Digital Marketing</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="web-design.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Web Design</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="software.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Software</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Retail Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Wholesale Billing Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Production Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hotel &amp; Restaurant Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">AC Service Centre Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Retail Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Medicine Distributor and Whole Sale Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Hospital Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Office Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">MLM Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Saloon and Spa Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Education Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Examination Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Bakery Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Employee Management Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pathology Lab Software</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Billing and Account Software</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="graphic-designing.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Graphic Designing</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 360px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Business Card Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Letterhead Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Flyer Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Poster Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brochure Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Banner Design (Online &amp; Offline)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Pamphlet Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Catalog Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Leaflet Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Advertisements</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Point-of-Sale (POS) Display Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Event / Exhibition Stand Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographics Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Artwork / Illustrations</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Digital Painting &amp; Vector Art</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Book / Magazine Cover Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Product Label &amp; Sticker Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Icon &amp; Graphic Sets</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Newsletter Creative Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Presentation / Pitch Deck Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Creative Campaign Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Branding Consultation</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Instagram / Facebook Posts Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ad Banner Design (FB, Instagram, Google Ads)</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">YouTube Thumbnail Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Reels / Short Video Graphics</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Cover/Banner Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Story &amp; Highlight Cover Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Carousel Post Design</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Animated Social Media Creatives</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Infographics</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Branded Social Media Templates</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="automation-AI.html" class="dropdown-toggle" style="white-space: nowrap !important; font-size: 0.95rem !important; text-decoration: none; color: inherit;">Automation AI</a>
+                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 320px; max-height: 400px; overflow-y: auto; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Email Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">email automatically send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">bulk mail send</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp Marketing</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp chat AI</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp offer promotion</a>
+                            <a href="#" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WhatsApp bulk msg send</a>
+                        </div>
+                    </div>
 
-                <div class="nav-links" id="navLinks">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <div class="dropdown">
-                        <span class="dropdown-toggle">Digital Marketing</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Marketing (SMM)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Optimization (SEO)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Search Engine Marketing (SEM)</a>
-                            <a href="digital-marketing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Content Marketing</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <span class="dropdown-toggle">Web Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Custom Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Static Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Dynamic Website Design</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Redesign Website</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">WordPress Website Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Responsive Website Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Landing Page Designing</a>
-                            <a href="website-development.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Ecommerce Website</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <span class="dropdown-toggle">Graphic Design</span>
-                        <div class="dropdown-menu" style="display: none; flex-direction: column; position: absolute; top: 100%; left: 0; min-width: 280px; background: rgba(15, 23, 41, 0.98); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.75rem; padding: 0.5rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); z-index: 9999;">
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Logo Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Social Media Creatives</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Marketing Collateral</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Brand Identity Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Packaging Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Print Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Infographic Design</a>
-                            <a href="graphic-designing.html" class="dropdown-item" style="display: block; width: 100%; padding: 0.75rem 1.25rem; color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.9rem; line-height: 1.4; text-align: left; white-space: normal; box-sizing: border-box;">Motion Graphics & Video Editing</a>
-                        </div>
-                    </div>
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                    <a href="testimonials.html" class="nav-link">Testimonials</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="contact.html" class="nav-link" style="white-space: nowrap !important; font-size: 0.95rem !important;">Contact</a>
+
                 </div>
-
+                
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
                     <span></span>
@@ -75,91 +144,887 @@
         </div>
     </nav>
 
-    <header class="service-page-hero">
-        <div class="hero-bg">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-        </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section style="padding: 5rem 0 3rem 0; background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.25), transparent 55%), radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.15), transparent 45%), #020617;">
         <div class="container">
-            <div class="service-hero-content reveal active">
-                <div class="service-badge">🎨 Brand + Creative</div>
-                <h1 class="service-hero-title">Graphic Designing <span class="gradient-text">Services</span></h1>
-                <p class="service-hero-subtitle">Premium visual design that improves trust, brand recognition, and engagement across every platform.</p>
-                <div class="service-hero-actions">
-                    <a href="contact.html" class="btn-primary modern-hover">Get Quote <span class="arrow">→</span></a>
-                    <a href="#overview" class="btn-outline modern-hover">Explore Details</a>
+            <div style="text-align: center; max-width: 55rem; margin: 0 auto;">
+                <span style="display: inline-block; padding: .4rem 1rem; border-radius: 999px; background: rgba(164, 212, 58, 0.15); color: #a4d43a; font-size: .85rem; font-weight: 600; margin-bottom: 1.25rem;">🎨 Creative Design Studio</span>
+                <h1 style="font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.15; margin-bottom: 1.25rem; color: #e5e7eb;">
+                    Design That <span style="color: #a4d43a;">Tells Your Story</span>
+                </h1>
+                <p style="color: #9ca3af; font-size: 1.05rem; line-height: 1.8; max-width: 42rem; margin: 0 auto 1.75rem auto;">
+                    From logos to social media creatives, we craft stunning visuals that captivate your audience and elevate your brand. 35+ design services for every need.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" style="padding: .9rem 2rem; border-radius: .7rem; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; font-weight: 700; text-decoration: none; font-size: 1rem;">
+                        Start Your Project →
+                    </a>
+                    <a href="#services" style="padding: .9rem 2rem; border-radius: .7rem; background: rgba(255,255,255,0.05); color: #e5e7eb; font-weight: 600; text-decoration: none; font-size: 1rem; border: 1px solid rgba(148, 163, 184, 0.4);">
+                        View Services
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="service-page-section" id="overview">
-            <div class="container">
-                <div class="service-page-grid">
-                    <div class="service-page-card glass-card">
-                        <h2>What this service is</h2>
-                        <p>Graphic Designing is the craft of communicating your message visually — using consistent branding, strong layouts, and engaging creatives that represent your business professionally.</p>
-                        <p>From logos to daily social creatives, we design assets that make your brand look premium and reliable.</p>
-                    </div>
+    <!-- Services Section -->
+    <section id="services" style="padding: 4rem 0; background: #020617;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 1.9rem; color: #e5e7eb; margin-bottom: .6rem;">Our Design Services</h2>
+                <p style="color: #9ca3af; font-size: 1rem; max-width: 35rem; margin: 0 auto;">
+                    35+ creative design services for brand identity, print, digital, and social media
+                </p>
+            </div>
+            <div id="servicesGrid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;">
+                <!-- Logo Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #a4d43a, #4db8b8); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎨</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Logo Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Unique brand mark design that captures your business identity and creates lasting impressions.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Vector Format</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Multiple Variants</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Source Files</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
 
-                    <div class="service-page-card glass-card">
-                        <h2>How it works</h2>
-                        <ol class="service-steps">
-                            <li><strong>Brief:</strong> Understand your brand, target audience, and goals.</li>
-                            <li><strong>Concepts:</strong> Share initial design directions and references.</li>
-                            <li><strong>Design:</strong> Create final assets with brand consistency.</li>
-                            <li><strong>Delivery:</strong> Provide editable + export files for all platforms.</li>
-                        </ol>
-                    </div>
+                <!-- Brand Identity Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ff6b00, #ff9500); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🏷️</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Brand Identity Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Complete branding kit including color palette, typography, and visual guidelines for consistency.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Color Palette</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Typography</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Brand Guide</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
 
-                    <div class="service-page-card glass-card">
-                        <h2>How MS Digital World delivers</h2>
-                        <ul class="service-bullets">
-                            <li>Modern, clean UI with a premium corporate look.</li>
-                            <li>Quick turnaround and revision-friendly workflow.</li>
-                            <li>Design systems to keep your brand consistent everywhere.</li>
-                            <li>Ready-to-post formats for Instagram, Facebook, and ads.</li>
-                        </ul>
-                    </div>
+                <!-- Business Card Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #21759b, #464646); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">💳</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Business Card Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Professional business cards that leave a lasting impression with premium design quality.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Print Ready</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Double Sided</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">CMYK</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
 
-                    <div class="service-page-card glass-card">
-                        <h2>Included features</h2>
-                        <div class="service-features">
-                            <span class="feature-chip">Logo Design</span>
-                            <span class="feature-chip">Brand Guidelines</span>
-                            <span class="feature-chip">Social Media Creatives</span>
-                            <span class="feature-chip">Ad Creatives</span>
-                            <span class="feature-chip">Posters & Flyers</span>
-                            <span class="feature-chip">Brochures</span>
-                            <span class="feature-chip">Business Cards</span>
-                            <span class="feature-chip">Banner Design</span>
+                <!-- Letterhead Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #22c55e, #84cc16); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📄</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Letterhead Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Official stationery design that reflects professionalism and brand consistency.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">A4 Size</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Word Template</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Print Ready</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
+
+                <!-- Flyer Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ec4899, #8b5cf6); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📃</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Flyer Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Eye-catching promotional handouts that grab attention and drive customer engagement.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">A5/A4 Size</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Double Sided</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">High Resolution</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
+
+                <!-- Poster Design -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                    <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #3b82f6, #06b6d4); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🖼️</div>
+                    <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Poster Design</h3>
+                    <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                        Large format eye-catching visuals for events, promotions, and brand awareness campaigns.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">A3/A2/A1</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">High Quality</li>
+                        <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Digital + Print</li>
+                    </ul>
+                    <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                </div>
+
+                <!-- Hidden Services -->
+                <div id="moreServices" style="display: none; grid-column: 1 / -1;">
+                    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;">
+                        <!-- Brochure Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f59e0b, #ef4444); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📖</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Brochure Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Multi-fold layouts for detailed product showcases and company information.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Bi-fold</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Tri-fold</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Z-fold</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Banner Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #8b5cf6, #6366f1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎯</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Banner Design (Online & Offline)</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                High-impact banners for websites, social media, and physical displays.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Web Banners</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Flex Banners</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Standees</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Pamphlet Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #06b6d4, #3b82f6); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📋</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Pamphlet Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Single sheet promotional materials for quick distribution and marketing.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Single Sheet</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Double Sided</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">A5 Size</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Catalog Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #10b981, #14b8a6); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📚</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Catalog Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Comprehensive product showcase books for wholesale and retail businesses.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Multi-page</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Product Layout</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Print Ready</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Leaflet Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f97316, #eab308); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📜</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Leaflet Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Compact handouts perfect for quick distribution at events and locations.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">DL Size</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Single Side</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Quick Print</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Print Advertisements -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ec4899, #f43f5e); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📰</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Print Advertisements</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Magazine and newspaper ads designed to capture attention and drive responses.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Magazine</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Newspaper</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">High Res</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- POS Display Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #8b5cf6, #a855f7); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🛍️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">POS Display Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Point-of-sale materials that drive impulse purchases at checkout counters.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Danglers</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Standees</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Shelf Talkers</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Event/Exhibition Stand Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #22c55e, #10b981); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🏛️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Event/Exhibition Stand Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Booth and stall designs that attract visitors and showcase your brand effectively.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">3D Render</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Backdrop</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Counter</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Infographics Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #3b82f6, #6366f1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📊</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Infographics Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Data visualization that makes complex information easy to understand and share.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Data Viz</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Charts</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Social Ready</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Packaging Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f59e0b, #f97316); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📦</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Packaging Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Product packaging that stands out on shelves and enhances brand perception.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Box Design</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Label</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Pouch</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Custom Artwork -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ec4899, #d946ef); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">✏️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Custom Artwork / Illustrations</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Hand-crafted illustrations that bring unique personality to your brand.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Hand Drawn</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Custom Style</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Unique</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Digital Painting & Vector Art -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #06b6d4, #22d3ee); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🖌️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Digital Painting & Vector Art</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Scalable vector graphics and digital paintings for any size application.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Vector</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Scalable</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">AI/EPS</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Book/Magazine Cover -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f43f5e, #e11d48); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📔</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Book / Magazine Cover Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Publication covers that capture attention and convey the essence of your content.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Front Cover</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Spine</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Back Cover</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Labels & Stickers -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #a855f7, #9333ea); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🏷️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Product Label & Sticker Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Product labels and stickers that communicate information and enhance appeal.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Product Label</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Sticker</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Tag</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Icon & Graphic Sets -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #14b8a6, #2dd4bf); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🔣</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Icon & Graphic Sets</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Custom icon sets and graphics for apps, websites, and brand consistency.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">App Icons</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Web Icons</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">SVG</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Email Newsletter -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f97316, #fb923c); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">💌</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Email Newsletter Creative Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Engaging email templates that drive opens, clicks, and conversions.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">HTML Email</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Responsive</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Template</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Presentation Deck -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #3b82f6, #60a5fa); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📊</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Presentation / Pitch Deck Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Professional pitch decks that win investors and impress clients.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">PowerPoint</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Google Slides</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Keynote</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Custom Campaign -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ef4444, #f87171); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎨</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Custom Creative Campaign Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Complete campaign creative sets for marketing initiatives and product launches.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Campaign Set</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Multi-format</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Consistent</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Branding Consult -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #eab308, #facc15); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">💡</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Custom Branding Consultation</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Strategic brand guidance and design direction for business growth.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Strategy</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Guidance</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Expert</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- IG/FB Posts -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #e1306c, #fd1d1d); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📲</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Instagram / Facebook Posts Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Engaging social media feed posts that boost engagement and brand visibility.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Square</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Portrait</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Engaging</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Ad Banner Design -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #1877f2, #42b72a); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎯</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Ad Banner Design (FB, Instagram, Google Ads)</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                High-converting ad creatives optimized for social media and PPC campaigns.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Facebook</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Instagram</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Google</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- YouTube Thumbnail -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ff0000, #cc0000); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎬</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">YouTube Thumbnail Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Click-worthy thumbnails that increase views and improve CTR on videos.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">1280x720</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">High CTR</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Branded</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Reels Graphics -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #ff0050, #00f2ea); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎞️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Reels / Short Video Graphics</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Trending short video graphics for Instagram Reels, TikTok, and YouTube Shorts.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">9:16 Format</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Trendy</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Viral</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Social Cover -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #4267B2, #1da1f2); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🖼️</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Social Media Cover/Banner Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Professional cover photos and banners for all social media platforms.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Facebook</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">LinkedIn</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Twitter</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Story & Highlight -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #833ab4, #fd1d1d); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">✨</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Story & Highlight Cover Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Instagram story templates and highlight covers that organize your profile.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Story</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Highlight</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Icons</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Carousel Posts -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🔄</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Carousel Post Design</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Multi-slide posts that tell stories and showcase multiple products or features.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Multi-slide</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Swipeable</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Cohesive</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Animated Creatives -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #f59e0b, #fbbf24); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🎭</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Animated Social Media Creatives</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Motion graphics and animated posts that capture attention in the feed.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Motion</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">GIF</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Video</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Social Infographics -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #10b981, #34d399); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">📈</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Social Media Infographics</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Data-rich posts optimized for sharing facts, stats, and information on social.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Data Viz</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Shareable</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Informative</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
+                        </div>
+
+                        <!-- Branded Templates -->
+                        <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); padding: 1.75rem; background: rgba(15, 23, 42, 0.6);">
+                            <div style="width: 3.5rem; height: 3.5rem; border-radius: .75rem; background: linear-gradient(135deg, #6366f1, #818cf8); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.5rem;">🧩</div>
+                            <h3 style="font-size: 1.15rem; color: #e5e7eb; margin-bottom: .5rem; font-weight: 600;">Branded Social Media Templates</h3>
+                            <p style="color: #9ca3af; font-size: .9rem; line-height: 1.6; margin-bottom: 1rem;">
+                                Reusable templates that maintain brand consistency across all posts.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-wrap: wrap; gap: .5rem;">
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Editable</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Canva/PSD</li>
+                                <li style="font-size: .8rem; color: #a4d43a; background: rgba(164, 212, 58, 0.1); padding: .25rem .75rem; border-radius: 999px;">Consistent</li>
+                            </ul>
+                            <a href="contact.html" style="color: #4db8b8; text-decoration: none; font-size: .9rem; font-weight: 500;">Learn more →</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="service-page-cta">
-            <div class="container">
-                <div class="service-cta-card">
-                    <div class="service-cta-copy">
-                        <h2>Want a premium brand look?</h2>
-                        <p>We’ll design a complete creative set that matches your brand and drives engagement.</p>
+            <!-- View More Button -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <button id="viewMoreBtn" onclick="toggleServices()" style="padding: .75rem 2rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.4); background: rgba(15, 23, 42, 0.6); color: #e5e7eb; font-weight: 600; cursor: pointer; font-size: .9rem;">
+                    View More Services ↓
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleServices() {
+            const moreServices = document.getElementById('moreServices');
+            const btn = document.getElementById('viewMoreBtn');
+            if (moreServices.style.display === 'none' || moreServices.style.display === '') {
+                moreServices.style.display = 'grid';
+                btn.innerHTML = 'View Less Services ↑';
+            } else {
+                moreServices.style.display = 'none';
+                btn.innerHTML = 'View More Services ↓';
+            }
+        }
+    </script>
+
+    <!-- Industries We Serve -->
+    <section style="padding: 4rem 0; background: #020617; border-top: 1px solid rgba(148, 163, 184, 0.1);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">Industries We Serve</h2>
+                <p style="color: #9ca3af; font-size: .95rem;">Creative design solutions for every business sector</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem;">
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">🏢</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Corporate</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">🛒</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Retail</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">🏥</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Healthcare</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">🏫</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Education</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">🍽️</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Food & Beverage</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem 1rem; border-radius: .75rem; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(148, 163, 184, 0.15);">
+                    <div style="font-size: 2rem; margin-bottom: .5rem;">💇</div>
+                    <p style="color: #e5e7eb; font-size: .85rem; margin: 0; font-weight: 500;">Beauty/Salon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="padding: 4rem 0; background: linear-gradient(180deg, #020617 0%, #0a0f1c 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">What Our Clients Say</h2>
+                <p style="color: #9ca3af; font-size: .95rem;">Success stories from businesses we've designed for</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem;">
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.6); padding: 1.5rem;">
+                    <div style="color: #fbbf24; font-size: 1.2rem; margin-bottom: .75rem;">★★★★★</div>
+                    <p style="color: #d1d5db; font-size: .9rem; line-height: 1.7; margin-bottom: 1rem;">
+                        "The logo and brand identity design completely transformed our company's image. Professional, creative, and delivered on time!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: .75rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background: linear-gradient(135deg, #a4d43a, #4db8b8); display: flex; align-items: center; justify-content: center; font-weight: 600; color: #020617;">SK</div>
+                        <div>
+                            <p style="color: #e5e7eb; font-size: .9rem; margin: 0; font-weight: 500;">Sanjay Kumar</p>
+                            <p style="color: #9ca3af; font-size: .8rem; margin: 0;">CEO, TechVision Inc</p>
+                        </div>
                     </div>
-                    <div class="service-cta-actions">
-                        <a href="contact.html" class="btn-primary">Contact Us <span class="arrow">→</span></a>
-                        <a href="contact.html" class="btn-outline">Get Quote</a>
+                </div>
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.6); padding: 1.5rem;">
+                    <div style="color: #fbbf24; font-size: 1.2rem; margin-bottom: .75rem;">★★★★★</div>
+                    <p style="color: #d1d5db; font-size: .9rem; line-height: 1.7; margin-bottom: 1rem;">
+                        "Our social media engagement increased by 200% after using their Instagram post designs. Highly creative team!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: .75rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background: linear-gradient(135deg, #ec4899, #8b5cf6); display: flex; align-items: center; justify-content: center; font-weight: 600; color: #fff;">PP</div>
+                        <div>
+                            <p style="color: #e5e7eb; font-size: .9rem; margin: 0; font-weight: 500;">Priya Patel</p>
+                            <p style="color: #9ca3af; font-size: .8rem; margin: 0;">Founder, Glow Beauty</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.6); padding: 1.5rem;">
+                    <div style="color: #fbbf24; font-size: 1.2rem; margin-bottom: .75rem;">★★★★★</div>
+                    <p style="color: #d1d5db; font-size: .9rem; line-height: 1.7; margin-bottom: 1rem;">
+                        "Packaging design for our product line was exceptional. Sales increased by 45% within the first month of launch!"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: .75rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; border-radius: 50%; background: linear-gradient(135deg, #f59e0b, #ef4444); display: flex; align-items: center; justify-content: center; font-weight: 600; color: #fff;">AR</div>
+                        <div>
+                            <p style="color: #e5e7eb; font-size: .9rem; margin: 0; font-weight: 500;">Ankit Raj</p>
+                            <p style="color: #9ca3af; font-size: .8rem; margin: 0;">Director, Organic Foods Co</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <div class="footer-bg">
+    <!-- Results That Speak -->
+    <section style="padding: 4rem 0; background: #0a0f1c;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">Our Impact</h2>
+                <p style="color: #9ca3af; font-size: .95rem;">Real results from our design work</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem;">
+                <div style="text-align: center; padding: 2rem; border-radius: 1rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.2)); border: 1px solid rgba(148, 163, 184, 0.2);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #3b82f6; margin-bottom: .25rem;">1,000+</div>
+                    <p style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0; font-weight: 500;">Designs Delivered</p>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0;">Across all categories</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; border-radius: 1rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.2)); border: 1px solid rgba(148, 163, 184, 0.2);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #8b5cf6; margin-bottom: .25rem;">500+</div>
+                    <p style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0; font-weight: 500;">Happy Clients</p>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0;">Satisfied customers</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; border-radius: 1rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(20, 184, 166, 0.2)); border: 1px solid rgba(148, 163, 184, 0.2);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #10b981; margin-bottom: .25rem;">35+</div>
+                    <p style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0; font-weight: 500;">Design Services</p>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0;">From print to digital</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; border-radius: 1rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(239, 68, 68, 0.2)); border: 1px solid rgba(148, 163, 184, 0.2);">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #f59e0b; margin-bottom: .25rem;">24h</div>
+                    <p style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0; font-weight: 500;">Avg. Delivery</p>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0;">Fast turnaround</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us + Quote Form -->
+    <section style="padding: 4rem 0; background: #0a0f1c;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; align-items: center;">
+                <div>
+                    <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: 1rem;">Why Choose Our Design?</h2>
+                    <p style="color: #9ca3af; font-size: .95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                        We combine creativity with strategy to deliver designs that not only look beautiful but also drive results for your business.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; align-items: flex-start; gap: .75rem;">
+                            <span style="width: 1.5rem; height: 1.5rem; border-radius: 50%; background: rgba(164, 212, 58, 0.2); color: #a4d43a; display: flex; align-items: center; justify-content: center; font-size: .8rem; flex-shrink: 0;">✓</span>
+                            <div>
+                                <h4 style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0;">Unlimited Revisions</h4>
+                                <p style="color: #9ca3af; font-size: .85rem; margin: 0;">We refine until you're 100% satisfied</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: .75rem;">
+                            <span style="width: 1.5rem; height: 1.5rem; border-radius: 50%; background: rgba(164, 212, 58, 0.2); color: #a4d43a; display: flex; align-items: center; justify-content: center; font-size: .8rem; flex-shrink: 0;">✓</span>
+                            <div>
+                                <h4 style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0;">Source Files Included</h4>
+                                <p style="color: #9ca3af; font-size: .85rem; margin: 0;">AI, PSD, EPS formats provided</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: .75rem;">
+                            <span style="width: 1.5rem; height: 1.5rem; border-radius: 50%; background: rgba(164, 212, 58, 0.2); color: #a4d43a; display: flex; align-items: center; justify-content: center; font-size: .8rem; flex-shrink: 0;">✓</span>
+                            <div>
+                                <h4 style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0;">Fast Turnaround</h4>
+                                <p style="color: #9ca3af; font-size: .85rem; margin: 0;">24-48 hours for most projects</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: flex-start; gap: .75rem;">
+                            <span style="width: 1.5rem; height: 1.5rem; border-radius: 50%; background: rgba(164, 212, 58, 0.2); color: #a4d43a; display: flex; align-items: center; justify-content: center; font-size: .8rem; flex-shrink: 0;">✓</span>
+                            <div>
+                                <h4 style="color: #e5e7eb; font-size: 1rem; margin: 0 0 .25rem 0;">Print-Ready Files</h4>
+                                <p style="color: #9ca3af; font-size: .85rem; margin: 0;">High-res, CMYK, bleed included</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-radius: 1rem; padding: 2rem; background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(52, 211, 153, 0.15)); border: 1px solid rgba(148, 163, 184, 0.2);">
+                    <h3 style="font-size: 1.25rem; color: #e5e7eb; margin-bottom: 1.25rem; text-align: center;">Get Free Quote</h3>
+                    <form style="display: flex; flex-direction: column; gap: 1rem;">
+                        <input type="text" placeholder="Your Name" style="padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.4); background: rgba(15, 23, 42, 0.8); color: #e5e7eb; font-size: .9rem; outline: none;">
+                        <input type="email" placeholder="Email Address" style="padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.4); background: rgba(15, 23, 42, 0.8); color: #e5e7eb; font-size: .9rem; outline: none;">
+                        <select style="padding: .8rem 1rem; border-radius: .6rem; border: 1px solid rgba(148, 163, 184, 0.4); background: rgba(15, 23, 42, 0.8); color: #9ca3af; font-size: .9rem; outline: none; cursor: pointer;">
+                            <option>Select Design Type</option>
+                            <option>Logo / Brand Identity</option>
+                            <option>Print Design</option>
+                            <option>Social Media</option>
+                            <option>Packaging</option>
+                            <option>Other</option>
+                        </select>
+                        <button type="submit" style="padding: .9rem; border-radius: .6rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; font-weight: 700; font-size: 1rem; cursor: pointer;">
+                            Get Free Quote →
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section style="padding: 4rem 0; background: linear-gradient(180deg, #020617 0%, #0a0f1c 100%); border-top: 1px solid rgba(148, 163, 184, 0.1);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+                <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">Design Packages</h2>
+                <p style="color: #9ca3af; font-size: .95rem;">Transparent pricing for every project</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; max-width: 60rem; margin: 0 auto;">
+                <!-- Basic -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.5); padding: 1.75rem; text-align: center;">
+                    <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Basic</h3>
+                    <div style="font-size: 2rem; font-weight: 700; color: #4db8b8; margin-bottom: .25rem;">₹4,999</div>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">per project</p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 2 Design Concepts</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 3 Revisions</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Source Files</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 48h Delivery</li>
+                    </ul>
+                    <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: rgba(148, 163, 184, 0.2); color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: .9rem;">Get Started</a>
+                </div>
+
+                <!-- Professional - Popular -->
+                <div style="border-radius: 1rem; border: 2px solid #a4d43a; background: rgba(15, 23, 42, 0.7); padding: 1.75rem; text-align: center; position: relative; transform: scale(1.05);">
+                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; padding: .25rem 1rem; border-radius: 999px; font-size: .75rem; font-weight: 700;">MOST POPULAR</div>
+                    <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem; margin-top: .5rem;">Professional</h3>
+                    <div style="font-size: 2rem; font-weight: 700; color: #a4d43a; margin-bottom: .25rem;">₹9,999</div>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">per project</p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 5 Design Concepts</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Unlimited Revisions</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> All Source Files</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 24h Delivery</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Print & Web Ready</li>
+                    </ul>
+                    <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; text-decoration: none; font-weight: 700; font-size: .9rem;">Get Started →</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.5); padding: 1.75rem; text-align: center;">
+                    <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Enterprise</h3>
+                    <div style="font-size: 2rem; font-weight: 700; color: #ec4899; margin-bottom: .25rem;">Custom</div>
+                    <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">monthly retainer</p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Unlimited Designs</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Dedicated Designer</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Priority Support</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Brand Guidelines</li>
+                        <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Same Day Delivery</li>
+                    </ul>
+                    <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: rgba(148, 163, 184, 0.2); color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: .9rem;">Contact Us</a>
+                </div>
+            </div>
+            <p style="text-align: center; color: #6b7280; font-size: .85rem; margin-top: 1.5rem;">Bulk discounts available. Custom packages tailored to your needs.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 4rem 0; background: radial-gradient(circle at center, rgba(79, 70, 229, 0.2), transparent 70%), #020617;">
+        <div class="container">
+            <div style="text-align: center; max-width: 45rem; margin: 0 auto;">
+                <h2 style="font-size: 1.9rem; color: #e5e7eb; margin-bottom: .75rem;">Ready to Elevate Your Brand?</h2>
+                <p style="color: #9ca3af; font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                    Let's create stunning visuals that make your brand stand out from the competition.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" style="padding: .9rem 2rem; border-radius: .7rem; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; font-weight: 700; text-decoration: none; font-size: 1rem;">
+                        Start Your Project
+                    </a>
+                    <a href="https://wa.me/919692727491" target="_blank" style="padding: .9rem 2rem; border-radius: .7rem; background: #22c55e; color: #022c22; font-weight: 600; text-decoration: none; font-size: 1rem; display: inline-flex; align-items: center; gap: .5rem;">
+                        💬 WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="footer" style="background: #0f1729;">
+        <div class="footer-bg" style="display: none;">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
         </div>
@@ -168,18 +1033,83 @@
                 <div class="footer-col footer-about">
                     <a href="index.html" class="footer-logo">
                         <img src="images/Logo.png" alt="MS Digital World Logo" class="footer-logo-img">
-                        <h3 class="gradient-text">MS Digital World</h3>
+                        <h2 class="gradient-text">MS Digital World</h2>
                     </a>
-                    <p>Your trusted partner for digital transformation. We help businesses grow with cutting-edge technology and creative solutions.</p>
+                    <p style="margin-bottom: 1.5rem;">We build scalable digital solutions that help businesses grow online with clarity and confidence.</p>
+
+               
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <span>info@msdigitalworld.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+91 9692727491 / 8112161993</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Puri, Odisha, India 752001</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                        <li><a href="software.html">Software</a></li>
+                        <li><a href="graphic-designing.html">Graphic Designing</a></li>
+                        <li><a href="automation-AI.html">Automation AI</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help-center.html">Help Center</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Stay Updated</h4>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 1rem;">Subscribe for digital insights and updates.</p>
+                    <form class="newsletter-form" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <input type="email" placeholder="Enter your email" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-size: 0.9rem; outline: none;">
+                        <button type="submit" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #0f1729; font-weight: 600; cursor: pointer; font-size: 0.9rem;">Subscribe</button>
+                    </form>
                 </div>
             </div>
+            
             <div class="footer-divider"></div>
+            
             <div class="footer-bottom">
                 <p>© 2026 MS Digital World. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="faqs.html">FAQs</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </body>
 </html>
