@@ -33,6 +33,6 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    inject('#site-nav', 'partials/navbar.html');
+    setActiveNavLink(document);
   });
 })();

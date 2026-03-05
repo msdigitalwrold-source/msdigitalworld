@@ -69,7 +69,40 @@
   </style>
 </head>
 <body>
-  <div id="site-nav"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MS Digital World Home">
+        <img class="brand-logo" src="logo/Logo.png" alt="MS Digital World logo" />
+        <span class="brand-name">MS Digital World</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="digital-marketing.html" data-dropdown-trigger>Digital Marketing</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="web-design.html" data-dropdown-trigger>Web Design</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="graphic-designing.html" data-dropdown-trigger>GRAPHIC DESIGNING</a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main id="main">
     <!-- Hero Section -->
@@ -464,72 +497,7 @@
         </div>
     </section>
 
-    <!-- Pricing Packages -->
-     <!-- <section id="packages" style="padding: 4rem 0; background: linear-gradient(180deg, #0a0f1c 0%, #020617 100%); border-top: 1px solid rgba(148, 163, 184, 0.1);">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 2.5rem;">
-          <h2 style="font-size: 1.8rem; color: #e5e7eb; margin-bottom: .5rem;">Design Packages</h2>
-          <p style="color: #9ca3af; font-size: .95rem;">Choose a plan that fits your design needs</p>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; max-width: 80rem; margin: 0 auto;">
-          <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.5); padding: 1.75rem; text-align: center;">
-            <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Starter</h3>
-            <div style="font-size: 2rem; font-weight: 700; color: #4db8b8; margin-bottom: .25rem;">₹2,999</div>
-            <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">one-time</p>
-            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 1 Logo Design</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 3 Social Media Posts</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Basic Revisions</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Source Files</li>
-            </ul>
-            <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: rgba(148, 163, 184, 0.2); color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: .9rem;">Get Started</a>
-          </div>
 
-          <div style="border-radius: 1rem; border: 2px solid #a4d43a; background: rgba(15, 23, 42, 0.7); padding: 1.75rem; text-align: center; position: relative; transform: scale(1.05);">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; padding: .25rem 1rem; border-radius: 999px; font-size: .75rem; font-weight: 700;">MOST POPULAR</div>
-            <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem; margin-top: .5rem;">Professional</h3>
-            <div style="font-size: 2rem; font-weight: 700; color: #a4d43a; margin-bottom: .25rem;">₹7,999</div>
-            <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">one-time</p>
-            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Complete Branding</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 12 Social Media Posts</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 2 Print Designs</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Unlimited Revisions</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 1 Month Support</li>
-            </ul>
-            <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: linear-gradient(135deg, #a4d43a, #4db8b8); color: #020617; text-decoration: none; font-weight: 700; font-size: .9rem;">Get Started →</a>
-          </div>
-
-          <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.5); padding: 1.75rem; text-align: center;">
-            <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Premium</h3>
-            <div style="font-size: 2rem; font-weight: 700; color: #ec4899; margin-bottom: .25rem;">₹15,999</div>
-            <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">one-time</p>
-            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Full Brand Identity</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 25 Social Media Assets</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Packaging & Merchandise</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Website Graphics</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> 3 Months Support</li>
-            </ul>
-            <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: rgba(148, 163, 184, 0.2); color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: .9rem;">Get Started</a>
-          </div>
-
-          <div style="border-radius: 1rem; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.5); padding: 1.75rem; text-align: center;">
-            <h3 style="font-size: 1.1rem; color: #e5e7eb; margin-bottom: .5rem;">Enterprise</h3>
-            <div style="font-size: 2rem; font-weight: 700; color: #8b5cf6; margin-bottom: .25rem;">Custom</div>
-            <p style="color: #9ca3af; font-size: .8rem; margin: 0 0 1.25rem 0;">tailored pricing</p>
-            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; text-align: left;">
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Custom Design Solutions</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Multi-Platform Assets</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; border-bottom: 1px solid rgba(148, 163, 184, 0.1); display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Ongoing Design Support</li>
-              <li style="color: #d1d5db; font-size: .85rem; padding: .4rem 0; display: flex; align-items: center; gap: .5rem;"><span style="color: #a4d43a;">✓</span> Dedicated Designer</li>
-            </ul>
-            <a href="contact.html" style="display: block; padding: .75rem; border-radius: .6rem; background: rgba(148, 163, 184, 0.2); color: #e5e7eb; text-decoration: none; font-weight: 600; font-size: .9rem;">Contact Us</a>
-          </div>
-        </div>
-        <p style="text-align: center; color: #6b7280; font-size: .85rem; margin-top: 1.5rem;">All prices in INR. GST extra. Monthly design subscriptions available.</p>
-      </div>
-    </section> -->
 
     <!-- CTA Section -->
     <section style="padding: 4rem 0; background: radial-gradient(circle at center, rgba(79, 70, 229, 0.2), transparent 70%), #020617;">

@@ -113,9 +113,42 @@
   </script>
 </head>
 <body>
-  <div id="site-nav"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MS Digital World Home">
+        <img class="brand-logo" src="logo/Logo.png" alt="MS Digital World logo" />
+        <span class="brand-name">MS Digital World</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="digital-marketing.html" data-dropdown-trigger>Digital Marketing</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="web-design.html" data-dropdown-trigger>Web Design</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="graphic-designing.html" data-dropdown-trigger>GRAPHIC DESIGNING</a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
     <!-- Hero Section -->
     <section class="section reveal" style="padding: 6rem 0 4rem; background: linear-gradient(180deg, #020617 0%, #0a0f1c 50%, #020617 100%); position: relative; overflow: hidden;">
       <div style="position: absolute; inset: 0; background: radial-gradient(circle at 20% 50%, rgba(77, 184, 184, 0.15), transparent 50%), radial-gradient(circle at 80% 20%, rgba(164, 212, 58, 0.1), transparent 50%), radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1), transparent 50%);"></div>

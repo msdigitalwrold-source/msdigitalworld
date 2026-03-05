@@ -78,8 +78,42 @@
   }
   </script>
 </head>
+
 <body>
-  <div id="site-nav"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MS Digital World Home">
+        <img class="brand-logo" src="logo/Logo.png" alt="MS Digital World logo" />
+        <span class="brand-name">MS Digital World</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bars"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="digital-marketing.html" data-dropdown-trigger>Digital Marketing</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="web-design.html" data-dropdown-trigger>Web Design</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="graphic-designing.html" data-dropdown-trigger>GRAPHIC DESIGNING</a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main id="main">
     <section style="padding: 5rem 0 3rem 0; background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.25), transparent 55%), radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.15), transparent 45%), #020617;">
