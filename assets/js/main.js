@@ -1,9 +1,25 @@
 (function(){
+  function setActiveNavLink(root) {
+    try {
+      var path = window.location.pathname.split('/').pop() || 'index.html';
+      var links = root.querySelectorAll('.nav-link[href]');
+      links.forEach(function (a) {
+        a.classList.remove('is-active');
+        var href = a.getAttribute('href');
+        if (href === path) a.classList.add('is-active');
+      });
+    } catch (e) {
+      // no-op
+    }
+  }
+
   var navToggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('primary-nav');
   var year = document.getElementById('year');
 
   if (year) year.textContent = String(new Date().getFullYear());
+
+  setActiveNavLink(document);
 
   function closeAllDropdowns(except) {
     document.querySelectorAll('.has-dropdown.open').forEach(function(li){

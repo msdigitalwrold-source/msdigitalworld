@@ -1,0 +1,123 @@
+:root{
+  --bg:#020617;
+  --bg2:#0a0f1c;
+  --card:rgba(15,23,42,.62);
+  --border:rgba(148,163,184,.18);
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#a4d43a;
+  --accent2:#4db8b8;
+  --radius:16px;
+  --shadow:0 18px 60px rgba(0,0,0,.35);
+}
+
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:8px;
+  padding:.6rem 1rem;
+  background:#111827;
+  color:var(--text);
+  border:1px solid rgba(148,163,184,.35);
+  border-radius:12px;
+  z-index:9999;
+}
+
+.skip-link:focus{
+  left:8px;
+}
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(2,6,23,.72);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(148,163,184,.14);
+}
+
+.header-inner{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:800;
+}
+
+.brand-logo{height:32px;width:auto}
+.brand-name{font-size:1.05rem;letter-spacing:.2px}
+
+.nav-toggle{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  border:1px solid rgba(148,163,184,.28);
+  background:rgba(255,255,255,.04);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after{
+  display:block;
+  width:18px;
+  height:2px;
+  background:var(--text);
+  border-radius:999px;
+  content:"";
+  position:relative;
+}
+
+.nav-toggle-bars::before{position:absolute;top:-6px;left:0}
+.nav-toggle-bars::after{position:absolute;top:6px;left:0}
+
+.nav{display:flex}
+
+.nav-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:1.1rem;
+  align-items:center;
+}
+
+.nav-link{
+  color:rgba(226,232,240,.84);
+  text-decoration:none;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+.nav-link:hover{color:#fff}
+.nav-link.is-active{color:var(--accent)}
+
+@media (max-width: 940px){
+  .nav-toggle{display:inline-flex}
+  .nav{
+    position:absolute;
+    left:0;
+    right:0;
+    top:72px;
+    padding:1rem;
+    display:none;
+    background:rgba(2,6,23,.92);
+    border-bottom:1px solid rgba(148,163,184,.14);
+  }
+  .nav.is-open{display:block}
+  .nav-list{flex-direction:column;align-items:stretch;gap:.35rem}
+  .nav-link{display:block;padding:.85rem 1rem;border-radius:14px}
+  .nav-link:hover{background:rgba(255,255,255,.05)}
+}
