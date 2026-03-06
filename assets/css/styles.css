@@ -128,3 +128,24 @@ body{
 .faq-item{border-radius:1rem;background:rgba(2,6,23,.35);border:1px solid rgba(148,163,184,.14);padding:1rem 1.1rem}
 .faq-item summary{cursor:pointer;color:#e5e7eb;font-weight:800}
 .faq-item p{margin:.75rem 0 0 0;color:#9ca3af;line-height:1.9}
+
+/* Mobile responsive - make all multi-column grids single column on mobile */
+@media (max-width: 768px){
+  #services .services-grid[style*="grid-template-columns"],
+  .services-grid[style*="grid-template-columns"],
+  .process-grid[style*="grid-template-columns"],
+  .tools-grid[style*="grid-template-columns"],
+  .industries-grid[style*="grid-template-columns"]{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 520px){
+  #services .services-grid[style*="grid-template-columns"],
+  .services-grid[style*="grid-template-columns"],
+  .process-grid[style*="grid-template-columns"],
+  .tools-grid[style*="grid-template-columns"],
+  .industries-grid[style*="grid-template-columns"]{
+    grid-template-columns: 1fr !important;
+  }
+}

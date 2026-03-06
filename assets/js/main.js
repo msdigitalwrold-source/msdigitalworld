@@ -26,12 +26,21 @@
     navToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     nav.classList.toggle('is-open', expanded);
     navToggle.classList.toggle('is-open', expanded);
+    document.body.classList.toggle('nav-open', expanded);
   }
 
   if (navToggle && nav) {
     navToggle.addEventListener('click', function(){
       var expanded = navToggle.getAttribute('aria-expanded') === 'true';
       setNavExpanded(!expanded);
+    });
+
+    // Close menu when clicking a link on mobile
+    nav.addEventListener('click', function(e){
+      var link = e.target.closest('a');
+      if (!link) return;
+      var isMobile = window.matchMedia('(max-width: 940px)').matches;
+      if (isMobile) setNavExpanded(false);
     });
   }
 

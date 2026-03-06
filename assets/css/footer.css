@@ -45,5 +45,30 @@
   .dm-footer .legal{justify-content:center;flex-wrap:wrap}
 }
 @media (max-width: 520px){
-  .dm-footer .footer-top{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .dm-footer{padding:2rem 0 1rem}
+  .dm-footer .footer-top{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+      "brand brand"
+      "services company"
+      "newsletter newsletter";
+    gap:1.5rem 1rem;
+  }
+  .dm-footer .footer-top > div:nth-child(1){grid-area:brand;text-align:center}
+  .dm-footer .footer-top > div:nth-child(1) .brand-row{justify-content:center}
+  .dm-footer .footer-top > div:nth-child(1) .footer-desc{margin-left:auto;margin-right:auto}
+  .dm-footer .footer-top > div:nth-child(1) .contact-list{align-items:center}
+  .dm-footer .footer-top > div:nth-child(2){grid-area:services}
+  .dm-footer .footer-top > div:nth-child(3){grid-area:company}
+  .dm-footer .footer-top > div:nth-child(4){grid-area:newsletter}
+  .dm-footer .footer-top > div:nth-child(2),
+  .dm-footer .footer-top > div:nth-child(3){text-align:center}
+  .dm-footer .footer-top > div:nth-child(2) .link-list,
+  .dm-footer .footer-top > div:nth-child(3) .link-list{align-items:center}
+  .dm-footer .col-title{font-size:.85rem;margin-bottom:.5rem;color:#a4d43a}
+  .dm-footer .link-list a{font-size:.85rem}
+  .dm-footer .newsletter-help{font-size:.8rem}
+  .dm-footer .footer-desc{font-size:.85rem}
+  .dm-footer .contact-item{font-size:.8rem}
 }
