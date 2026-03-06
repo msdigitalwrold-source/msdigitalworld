@@ -45,5 +45,5 @@
   .dm-footer .legal{justify-content:center;flex-wrap:wrap}
 }
 @media (max-width: 520px){
-  .dm-footer .footer-top{grid-template-columns:1fr}
+  .dm-footer .footer-top{grid-template-columns:1fr 1fr;gap:1.5rem}
 }
