@@ -135,8 +135,13 @@ body{
   .services-grid[style*="grid-template-columns"],
   .process-grid[style*="grid-template-columns"],
   .tools-grid[style*="grid-template-columns"],
-  .industries-grid[style*="grid-template-columns"]{
+  .industries-grid[style*="grid-template-columns"],
+  .responsive-grid {
     grid-template-columns: 1fr !important;
+  }
+  
+  .responsive-flex {
+    flex-direction: column !important;
   }
 }
 
@@ -145,7 +150,12 @@ body{
   .services-grid[style*="grid-template-columns"],
   .process-grid[style*="grid-template-columns"],
   .tools-grid[style*="grid-template-columns"],
-  .industries-grid[style*="grid-template-columns"]{
+  .industries-grid[style*="grid-template-columns"],
+  .responsive-grid {
     grid-template-columns: 1fr !important;
+  }
+  
+  .responsive-flex {
+    flex-direction: column !important;
   }
 }
