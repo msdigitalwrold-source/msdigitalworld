@@ -272,4 +272,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('loaded');
     }, 100);
 
+    // ========== PACKAGE IMAGE SLIDER ==========
+    const packageSliders = document.querySelectorAll('.package-img');
+    packageSliders.forEach(slider => {
+        const slides = slider.querySelectorAll('.slide');
+        if (slides.length > 1) {
+            let currentIndex = 0;
+            setInterval(() => {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }, 3000);
+        }
+    });
+
 });
