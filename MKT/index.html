@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasuara King's Tower - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="border-overlay"></div>
+        
+        <header>
+            <div class="logo">
+                <img src="Logo/Logo.png" alt="Mahasuara Logo" class="logo-img">
+            </div>
+            <h1>MAHASUARA</h1>
+            <h2>KING'S TOWER</h2>
+            <div class="location">
+                <span class="star">✦</span> PURI, ODISHA <span class="star">✦</span>
+            </div>
+            
+            <div class="feedback-heading">
+                <span class="ornament left"></span>
+                <h3>SHARE YOUR ROYAL EXPERIENCE</h3>
+                <span class="ornament right"></span>
+            </div>
+            <p class="subtitle">Thank you for gracing us with your presence at <strong>Mahasuara King's Tower</strong>.<br>Your valuable thoughts inspire us to craft unforgettable flavors and exceptional dining moments.</p>
+        </header>
+
+        <form id="feedbackForm">
+            <!-- Personal Info Section -->
+            <section class="personal-info card">
+                <div class="input-group">
+                    <label for="name"><span class="icon user-icon"></span> NAME</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="contact"><span class="icon phone-icon"></span> CONTACT NO.</label>
+                    <span class="colon">:</span>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+                <div class="input-group">
+                    <label for="email"><span class="icon email-icon"></span> EMAIL</label>
+                    <span class="colon">:</span>
+                    <input type="email" id="email" name="email">
+                </div>
+            </section>
+
+            <!-- Rating Section -->
+            <section class="rating-section card">
+                <div class="section-title">
+                    <span class="ornament left"></span>
+                    <h4>PLEASE RATE YOUR EXPERIENCE</h4>
+                    <span class="ornament right"></span>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="rating-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>VERY POOR</th>
+                                <th>POOR</th>
+                                <th>AVERAGE</th>
+                                <th>GOOD</th>
+                                <th>EXCELLENT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="category-name"><span class="icon food-icon"></span> FOOD QUALITY</td>
+                                <td><label class="star-cell"><input type="radio" name="food_quality" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="food_quality" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="food_quality" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="food_quality" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="food_quality" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                            <tr>
+                                <td class="category-name"><span class="icon taste-icon"></span> TASTE</td>
+                                <td><label class="star-cell"><input type="radio" name="taste" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="taste" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="taste" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="taste" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="taste" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                            <tr>
+                                <td class="category-name"><span class="icon service-icon"></span> SERVICE</td>
+                                <td><label class="star-cell"><input type="radio" name="service" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="service" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="service" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="service" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="service" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                            <tr>
+                                <td class="category-name"><span class="icon ambience-icon"></span> AMBIENCE</td>
+                                <td><label class="star-cell"><input type="radio" name="ambience" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="ambience" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="ambience" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="ambience" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="ambience" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                            <tr>
+                                <td class="category-name"><span class="icon clean-icon"></span> CLEANLINESS</td>
+                                <td><label class="star-cell"><input type="radio" name="cleanliness" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="cleanliness" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="cleanliness" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="cleanliness" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="cleanliness" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                            <tr>
+                                <td class="category-name"><span class="icon money-icon"></span> VALUE FOR MONEY</td>
+                                <td><label class="star-cell"><input type="radio" name="value_for_money" value="Very Poor" required><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="value_for_money" value="Poor"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="value_for_money" value="Average"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="value_for_money" value="Good"><span class="star-icon-item">★</span></label></td>
+                                <td><label class="star-cell"><input type="radio" name="value_for_money" value="Excellent"><span class="star-icon-item">★</span></label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Comments Section -->
+            <section class="comments-section card">
+                <div class="section-title">
+                    <span class="ornament left"></span>
+                    <h4>ANY COMMENTS OR SUGGESTIONS?</h4>
+                    <span class="ornament right"></span>
+                </div>
+                <div class="textarea-wrapper">
+                    <textarea name="comments" rows="4" placeholder="Tell us about your experience, your favorite dishes, or any suggestions..."></textarea>
+                </div>
+            </section>
+
+            <!-- Dates Section -->
+            <section class="dates-section">
+                <div class="date-input">
+                    <label for="dob"><span class="icon cake-icon"></span> DATE OF BIRTH</label>
+                    <input type="text" id="dob" name="dob" placeholder="">
+                </div>
+                <div class="date-divider"></div>
+                <div class="date-input">
+                    <label for="anniversary"><span class="icon ring-icon"></span> ANNIVERSARY DATE</label>
+                    <input type="text" id="anniversary" name="anniversary" placeholder="">
+                </div>
+                <div class="date-divider"></div>
+                <div class="date-input other-input">
+                    <label for="other_date"><span class="icon star-icon"></span> OTHER (PLEASE SPECIFY)</label>
+                    <input type="text" id="other_date" name="other_date" placeholder="">
+                </div>
+            </section>
+
+            <!-- Official Use Section -->
+            <section class="official-use card">
+                <div class="section-title">
+                    <span class="ornament left"></span>
+                    <h4>FOR OFFICIAL USE ONLY</h4>
+                    <span class="ornament right"></span>
+                </div>
+                <div class="official-inputs">
+                    <div class="input-group">
+                        <label for="supervisor">FLOOR SUPERVISOR NAME</label>
+                        <span class="colon">:</span>
+                        <input type="text" id="supervisor" name="supervisor">
+                    </div>
+                    <div class="input-group">
+                        <label for="server">SERVER NAME</label>
+                        <span class="colon">:</span>
+                        <input type="text" id="server" name="server">
+                    </div>
+                </div>
+            </section>
+            
+            <button type="submit" id="submitBtn">Submit Feedback</button>
+            <div id="statusMessage"></div>
+        </form>
+
+        <footer>
+            <span class="star">✦</span> GREAT FOOD. GREAT SERVICE. GREAT MEMORIES. <span class="star">✦</span>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
