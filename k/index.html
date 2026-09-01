@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUROSAHI MULTI-SPORT ACADEMY - ADMISSION FORM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="form-wrapper">
+    <div class="paper-container">
+
+      <!-- ACADEMY HEADER -->
+      <header class="academy-header">
+        <div class="header-logo-left">
+          <img src="Logo/Logo.jpg" alt="Logo" class="academy-logo" onerror="this.src='assets/logo.jpg'">
+        </div>
+        <div class="header-info">
+          <h1 class="academy-title">KUROSAHI MULTI-SPORT ACADEMY</h1>
+          <p class="academy-branches">
+            VIP Colony, Satabdi Ra Kalakar, IRC Village, Bhubaneswar<br>
+            Kanan Vihar,Phase-II, Chandrasekharpur
+          </p>
+          <div class="academy-contacts">
+            <span>Contact: 9348118825/ 8260112721</span>
+            <span>Gmail: kurosahimultisportacademy@gmail.com</span>
+          </div>
+          <div class="form-main-title">
+            <span>ADMISSION FORM</span>
+          </div>
+        </div>
+        <div class="header-logo-right">
+          <img src="Logo/Logo.jpg" alt="Logo" class="academy-logo" onerror="this.src='assets/logo.jpg'">
+        </div>
+      </header>
+
+      <!-- ADMISSION FORM -->
+      <form id="admissionForm">
+
+        <!-- 1. Personal Details: -->
+        <div class="form-section">
+          <div class="section-title">
+            <h3>1. Personal Details:</h3>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="fullName">Full Name:</label>
+            <div class="field-input-wrap">
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+          </div>
+
+          <div class="form-row split-row">
+            <div class="split-col">
+              <label class="field-label" for="dob">Date of Birth:</label>
+              <div class="field-input-wrap date-picker-wrap">
+                <input type="date" id="dob" name="dob" required>
+                <i class="fa-regular fa-calendar-days calendar-click-icon" onclick="openPicker('dob')"
+                  title="Click to pick date"></i>
+              </div>
+            </div>
+
+            <div class="split-col gender-col">
+              <span class="field-label">Gender:</span>
+              <div class="radio-options">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Male" checked>
+                  <span>Male</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Female">
+                  <span>Female</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="Other">
+                  <span>Other</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="parentName">Father's/Mother's Name:</label>
+            <div class="field-input-wrap">
+              <input type="text" id="parentName" name="parentName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="address">Address:</label>
+            <div class="field-input-wrap">
+              <textarea id="address" name="address" rows="2" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row split-row">
+            <div class="split-col">
+              <label class="field-label" for="mobile">Mobile Number:</label>
+              <div class="field-input-wrap">
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+              </div>
+            </div>
+            <div class="split-col">
+              <label class="field-label" for="email">Email (optional):</label>
+              <div class="field-input-wrap">
+                <input type="email" id="email" name="email">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Course/Service Applying For -->
+        <div class="form-section">
+          <div class="section-title">
+            <h3>2. Course/Service Applying For</h3>
+          </div>
+
+          <div class="courses-grid">
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Karate">
+              <span>Karate</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Pencak Silat"> <span>Pencak
+                Silat</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="MMA"> <span>MMA</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Wrestling">
+              <span>Wrestling</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Kickboxing">
+              <span>Kickboxing</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Boxing">
+              <span>Boxing</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Muay thai"> <span>Muay
+                thai</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Chess"> <span>Chess</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Badminton">
+              <span>Badminton</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Shorting classes"> <span>Shorting
+                classes</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Zumba"> <span>Zumba</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Kr fit versal"> <span>Kr fit
+                versal</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Archery">
+              <span>Archery</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Weight Gain Program"> <span>Weight
+                Gain Program</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Weight Loss Program"> <span>Weight
+                Loss Program</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Physical Training (Govt. Jobs)">
+              <span>Physical Training (Govt. Jobs)</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Yoga"> <span>Yoga</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Meditation">
+              <span>Meditation</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses" value="Nutrition Chart"> <span>Nutrition
+                Chart</span></label>
+            <label class="checkbox-card"><input type="checkbox" name="courses"
+                value="Motivational Classes for Child Development"> <span>Motivational Classes for Child
+                Development</span></label>
+          </div>
+        </div>
+
+        <!-- 3. Preferred Batch Time -->
+        <div class="form-section">
+          <div class="section-title">
+            <h3>3. Preferred Batch Time</h3>
+          </div>
+
+          <div class="batch-grid">
+            <label class="batch-card"><input type="checkbox" name="batches" value="Morning (6:00 AM – 8:00 AM)">
+              <span>Morning (6:00 AM – 8:00 AM)</span></label>
+            <label class="batch-card"><input type="checkbox" name="batches" value="Morning (8:00AM – 9:00AM)">
+              <span>Morning (8:00AM – 9:00AM)</span></label>
+            <label class="batch-card"><input type="checkbox" name="batches" value="Afternoon (1:30 PM – 3:00 PM)">
+              <span>Afternoon (1:30 PM – 3:00 PM)</span></label>
+            <label class="batch-card"><input type="checkbox" name="batches" value="Evening (4:30 PM – 5:30 PM)">
+              <span>Evening (4:30 PM – 5:30 PM)</span></label>
+            <label class="batch-card"><input type="checkbox" name="batches" value="Evening (5:30PM – 6:30PM)">
+              <span>Evening (5:30PM – 6:30PM)</span></label>
+            <label class="batch-card"><input type="checkbox" name="batches" value="Evening. (6:30PM–7:30PM)">
+              <span>Evening. (6:30PM–7:30PM)</span></label>
+          </div>
+        </div>
+
+        <!-- 4. Emergency Contact Details -->
+        <div class="form-section">
+          <div class="section-title">
+            <h3>4. Emergency Contact Details</h3>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="emergencyName">Name:</label>
+            <div class="field-input-wrap">
+              <input type="text" id="emergencyName" name="emergencyName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="emergencyRelation">Relation:</label>
+            <div class="field-input-wrap">
+              <input type="text" id="emergencyRelation" name="emergencyRelation" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="emergencyPhone">Phone Number:</label>
+            <div class="field-input-wrap">
+              <input type="tel" id="emergencyPhone" name="emergencyPhone" pattern="[0-9]{10}" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Medical Information (if any): -->
+        <div class="form-section">
+          <div class="section-title">
+            <h3>5. Medical Information (if any):</h3>
+          </div>
+
+          <div class="form-row">
+            <div class="field-input-wrap">
+              <textarea id="medicalInfo" name="medicalInfo" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- STUDENT GUIDELINES -->
+        <div class="guidelines-box">
+          <h3 class="guidelines-heading">KURORSAHI MULTI-SPORT ACADEMY - STUDENT GUIDELINES</h3>
+
+          <div class="guideline-item">
+            <strong>1. Code of Conduct and Discipline:</strong>
+            <p>Respect instructors, fellow students, and all academy staff at all times.</p>
+            <p>Maintain a positive attitude and be open to learning and improvement.</p>
+            <p>Avoid disruptive behavior that could impact the learning environment.</p>
+            <p>Show sportsmanship, regardless of the outcome in any practice or competition.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>2. Attendance and Punctuality:</strong>
+            <p>Arrive at least 10 minutes before class to warm up and be prepared.</p>
+            <p>Attend all scheduled classes consistently to ensure steady progress.</p>
+            <p>Inform the instructor in advance if unable to attend a class.</p>
+            <p>Maintain regular attendance to qualify for belt tests, promotions, and competitions.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>3. Training Expectations and Progress Tracking:</strong>
+            <p>Follow the training plan provided by the instructor diligently.</p>
+            <p>Stay committed to the practice routine, both in class and at home.</p>
+            <p>Participate actively in classes and maintain focus during training sessions.</p>
+            <p>Progress is monitored regularly; students will receive constructive feedback to improve.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>4. Dress Code and Equipment:</strong>
+            <p>Wear the designated uniform and protective gear as instructed.</p>
+            <p>Keep uniforms clean, well-maintained, and free of offensive prints or language.</p>
+            <p>Bring personal water bottles and necessary training equipment to every class.</p>
+            <p>Ensure that personal belongings are properly labeled and stored safely.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>5. Hygiene and Cleanliness:</strong>
+            <p>Maintain personal hygiene to prevent the spread of infections.</p>
+            <p>Keep fingernails and toenails trimmed to avoid injuries.</p>
+            <p>Wash hands before and after training sessions.</p>
+            <p>Report any skin infections, injuries, or medical conditions to the instructor.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>6. Safety Protocols and Injury Management:</strong>
+            <p>Inform the instructor immediately if feeling unwell or injured.</p>
+            <p>Avoid attempting techniques beyond your current skill level without supervision.</p>
+            <p>Follow the instructor's guidance during sparring or combat drills to prevent injuries.</p>
+            <p>Use protective gear as instructed and ensure it is in good condition.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>7. Respect for Instructors and Fellow Students:</strong>
+            <p>Follow the instructor's guidance and show appreciation for their efforts.</p>
+            <p>Encourage fellow students and practice teamwork during group activities.</p>
+            <p>Avoid inappropriate language or gestures that may offend others.</p>
+            <p>Resolve conflicts peacefully and seek guidance from instructors if needed.</p>
+          </div>
+
+          <div class="guideline-item">
+            <strong>8. Communication and Feedback:</strong>
+            <p>Approach instructors respectfully with questions, concerns, or feedback.</p>
+            <p>Participate in feedback sessions and assessments to track progress.</p>
+            <p>Keep parents/guardians informed about training schedules and progress (for child students).</p>
+            <p class="mt-8">For any queries or concerns, students can contact the academy office or their respective
+              instructor.</p>
+          </div>
+        </div>
+
+        <!-- DECLARATION & BOTTOM DETAILS -->
+        <div class="declaration-block">
+          <h4>Declaration:</h4>
+          <p>I hereby declare that the information provided is true to the best of my knowledge. I agree to follow all
+            rules and regulations of Kurorsahi Multi-Sport Academy. I take full responsibility for my participation in
+            training sessions.</p>
+
+          <div class="academy-footer-info">
+            <p><strong>Kurorsahi Multi-Sport Academy</strong></p>
+            <p>Address: VIP Colony, Satabdi Ra Kalakar, IRC Village, Bhubaneswar</p>
+            <p>Contact: 8260112721</p>
+          </div>
+
+          <div class="declaration-checkbox-row">
+            <label>
+              <input type="checkbox" id="declarationCheck" name="declarationCheck" required>
+              <span>I Agree & Accept the Declaration and Guidelines</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- SIGNATURES (MATCHES EXACT PHYSICAL FORM) -->
+        <div class="paper-signatures-section">
+
+          <div class="sig-line-row">
+            <div class="sig-line-col">
+              <label for="formDate">Date:</label>
+              <div class="date-picker-wrap inline-date-wrap">
+                <input type="date" id="formDate" name="formDate">
+                <i class="fa-regular fa-calendar-days calendar-click-icon" onclick="openPicker('formDate')"
+                  title="Click to pick date"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1. Student Signature -->
+          <div class="sig-item-block">
+            <div class="sig-header-line">
+              <label class="sig-item-title" for="studentSigFile">Student Signature:</label>
+              <div class="sig-upload-action">
+                <input type="file" id="studentSigFile" name="studentSigFile" accept="image/*" class="custom-file-input">
+                <button type="button" class="btn-clear-sig-item" id="btnClearStudentSig" style="display:none;"
+                  onclick="removeSig('student')">&times; Remove</button>
+              </div>
+            </div>
+            <div class="dotted-sig-line">
+              <img id="studentSigImg" class="embedded-sig-img" style="display:none;" alt="Student Signature">
+            </div>
+          </div>
+
+          <!-- 2. Instructor Signature -->
+          <div class="sig-item-block">
+            <div class="sig-header-line">
+              <label class="sig-item-title" for="instructorSigFile">Instructor Signature:</label>
+              <div class="sig-upload-action">
+                <input type="file" id="instructorSigFile" name="instructorSigFile" accept="image/*"
+                  class="custom-file-input">
+                <button type="button" class="btn-clear-sig-item" id="btnClearInstructorSig" style="display:none;"
+                  onclick="removeSig('instructor')">&times; Remove</button>
+              </div>
+            </div>
+            <div class="dotted-sig-line">
+              <img id="instructorSigImg" class="embedded-sig-img" style="display:none;" alt="Instructor Signature">
+            </div>
+          </div>
+
+          <!-- 3. Signature of Applicant -->
+          <div class="sig-item-block split-sig-item">
+            <div class="sig-split-left">
+              <div class="sig-header-line">
+                <label class="sig-item-title" for="applicantSigFile">Signature of Applicant:</label>
+                <div class="sig-upload-action">
+                  <input type="file" id="applicantSigFile" name="applicantSigFile" accept="image/*"
+                    class="custom-file-input">
+                  <button type="button" class="btn-clear-sig-item" id="btnClearApplicantSig" style="display:none;"
+                    onclick="removeSig('applicant')">&times; Remove</button>
+                </div>
+              </div>
+              <div class="dotted-sig-line">
+                <img id="applicantSigImg" class="embedded-sig-img" style="display:none;" alt="Applicant Signature">
+              </div>
+            </div>
+            <div class="sig-split-right">
+              <label for="applicantDate">Date:</label>
+              <div class="date-picker-wrap inline-date-wrap">
+                <input type="date" id="applicantDate" name="applicantDate">
+                <i class="fa-regular fa-calendar-days calendar-click-icon" onclick="openPicker('applicantDate')"
+                  title="Click to pick date"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Signature of Parent/Guardian (if minor) -->
+          <div class="sig-item-block split-sig-item">
+            <div class="sig-split-left">
+              <div class="sig-header-line">
+                <label class="sig-item-title" for="parentSigFile">Signature of Parent/Guardian (if minor):</label>
+                <div class="sig-upload-action">
+                  <input type="file" id="parentSigFile" name="parentSigFile" accept="image/*" class="custom-file-input">
+                  <button type="button" class="btn-clear-sig-item" id="btnClearParentSig" style="display:none;"
+                    onclick="removeSig('parent')">&times; Remove</button>
+                </div>
+              </div>
+              <div class="dotted-sig-line">
+                <img id="parentSigImg" class="embedded-sig-img" style="display:none;" alt="Parent/Guardian Signature">
+              </div>
+            </div>
+            <div class="sig-split-right">
+              <label for="parentDate">Date:</label>
+              <div class="date-picker-wrap inline-date-wrap">
+                <input type="date" id="parentDate" name="parentDate">
+                <i class="fa-regular fa-calendar-days calendar-click-icon" onclick="openPicker('parentDate')"
+                  title="Click to pick date"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="director-stamp-row">
+            <div class="stamp-seal-box">
+              <span class="official-seal">KUROSAHI ACADEMY<br>★ BHUBANESWAR ★</span>
+            </div>
+            <div class="director-title">
+              <strong>Signature & Stamp</strong><br>
+              Founder & Director of Kurorsahi Multi-Sport Academy
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SUBMIT ACTION -->
+        <div class="submit-action-row">
+          <button type="submit" class="btn-submit" id="submitBtn">
+            SUBMIT ADMISSION FORM
+          </button>
+        </div>
+
+        <!-- STATUS MESSAGE -->
+        <div id="submitStatusMessage" class="status-msg"></div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ANIMATED SUCCESS POPUP MODAL -->
+  <div class="success-popup-backdrop" id="successPopupModal">
+    <div class="success-popup-card">
+      <button type="button" class="popup-close-x" onclick="closeSuccessPopup()">&times;</button>
+
+      <div class="success-icon-wrap">
+        <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+          <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+          <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+      </div>
+
+      <h2 class="popup-title">Form Submitted Successfully!</h2>
+      <p class="popup-subtitle">Your admission application has been successfully submitted and recorded.</p>
+
+      <div class="popup-app-badge">
+        <span class="app-label">Application ID</span>
+        <span class="app-id-code" id="popupAppId">KSA-2026-0000</span>
+      </div>
+
+      <div class="popup-actions">
+        <button type="button" class="btn-popup-ok" onclick="closeSuccessPopup()">
+          <i class="fa-solid fa-check"></i> Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
