@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Tour &amp; Travels - Enterprise Management &amp; Booking System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- 1. AUTH SCREEN (LOGIN / SIGNUP / 1-CLICK DEMO ROLE SELECTOR)    -->
+    <!-- ============================================================== -->
+    <div id="authScreen" class="auth-wrapper">
+        <div class="auth-card">
+            <!-- Left Branding Hero -->
+            <div class="auth-hero">
+                <div class="auth-hero-brand">
+                    <img src="logo.jpg" alt="Logo" class="auth-logo" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=100&auto=format&fit=crop&q=80';">
+                    <h2>Apna Travels</h2>
+                </div>
+                <div class="auth-hero-content">
+                    <span class="auth-tag"><i class="fa-solid fa-crown text-amber"></i> Enterprise Tour &amp; Travels Suite</span>
+                    <h3>Complete Tour, Cab &amp; Agency Management</h3>
+                    <p>End-to-end operational software for Passengers, Front-Desk Operators, and Business Owners with Live Google Sheets integration.</p>
+                </div>
+                <!-- Quick Demo 1-Click Login Bar -->
+                <div class="demo-login-box">
+                    <span class="demo-title"><i class="fa-solid fa-bolt text-amber"></i> Instant 1-Click Demo Login:</span>
+                    <div class="demo-buttons">
+                        <button type="button" class="btn-demo demo-user" onclick="quickLogin('user')">
+                            <i class="fa-solid fa-user"></i> User / Passenger
+                        </button>
+                        <button type="button" class="btn-demo demo-reception" onclick="quickLogin('reception')">
+                            <i class="fa-solid fa-headset"></i> Reception Desk
+                        </button>
+                        <button type="button" class="btn-demo demo-admin" onclick="quickLogin('admin')">
+                            <i class="fa-solid fa-shield-halved"></i> Master Admin (Full Access)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Section -->
+            <div class="auth-form-wrap">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tabLoginBtn" onclick="switchAuthTab('login')">Sign In</button>
+                    <button class="auth-tab" id="tabSignupBtn" onclick="switchAuthTab('signup')">Create Account</button>
+                </div>
+
+                <!-- LOGIN FORM -->
+                <form id="loginForm" class="auth-form-body">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address or Mobile</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" id="loginEmail" class="form-control" placeholder="user@apna.com or 9876543210" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginRole">Select Login Role</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <select id="loginRole" class="form-control">
+                                <option value="user">👤 User (Customer / Traveler)</option>
+                                <option value="reception">🛎️ Reception (Front-Desk Desk)</option>
+                                <option value="admin">👑 Admin (Full Business Access &amp; P&amp;L)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg mt-2">
+                        <i class="fa-solid fa-right-to-bracket"></i> Sign In to Dashboard
+                    </button>
+                </form>
+
+                <!-- SIGNUP FORM -->
+                <form id="signupForm" class="auth-form-body" style="display:none;">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="signupName" class="form-control" placeholder="e.g. Ramesh Kumar" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPhone">Mobile / WhatsApp No.</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="signupPhone" class="form-control" placeholder="10-digit mobile" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="signupEmail" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupRole">Register As</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-id-badge"></i>
+                            <select id="signupRole" class="form-control">
+                                <option value="user">👤 Customer / Traveler</option>
+                                <option value="reception">🛎️ Reception Staff</option>
+                                <option value="admin">👑 Business Admin</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Create Password</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="signupPassword" class="form-control" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg mt-2">
+                        <i class="fa-solid fa-user-plus"></i> Complete Registration
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- 2. APPLICATION SHELL (AFTER LOGIN)                             -->
+    <!-- ============================================================== -->
+    <div id="appContainer" class="app-layout" style="display:none;">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar no-print">
+            <div class="sidebar-top">
+                <div class="sidebar-brand">
+                    <div class="brand-icon-box">
+                        <img src="logo.jpg" alt="Logo" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=100&auto=format&fit=crop&q=80';">
+                    </div>
+                    <div class="brand-name">
+                        <span class="logo-symbol"><i class="fa-solid fa-compass text-primary"></i></span>
+                        <h2 id="appBrandTitle">ApnaTravel</h2>
+                    </div>
+                </div>
+
+                <!-- Navigation dynamic per role -->
+                <nav class="sidebar-nav" id="sidebarNav">
+                    <!-- Populated dynamically based on User, Reception, or Admin -->
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="role-indicator-card" id="sidebarRoleCard">
+                    <div class="role-icon" id="roleIcon"><i class="fa-solid fa-user-shield"></i></div>
+                    <div>
+                        <div class="role-title" id="roleTitle">Admin Portal</div>
+                        <div class="role-user-name" id="roleUserName">Master Admin</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-logout">
+                    <button class="btn-logout" onclick="logoutSession()">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Sign Out</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN WRAPPER -->
+        <div class="main-content-wrap">
+            <!-- HEADER -->
+            <header class="top-header no-print">
+                <div class="header-left">
+                    <h1 class="page-title" id="topPageTitle">Dashboard</h1>
+                    <span class="role-tag-badge" id="headerRoleBadge">ADMIN</span>
+                </div>
+
+                <div class="header-center">
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="globalSearchInput" placeholder="Search booking slip, customer, phone, driver...">
+                        <button class="search-clear-btn" id="btnSearchClear" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <!-- Google Sheets Live Indicator -->
+                    <div class="gsheet-sync-pill" id="gsheetIndicator" onclick="openGSheetConfigModal()" title="Click to view Google Sheets config">
+                        <span class="sync-dot"></span>
+                        <i class="fa-solid fa-table"></i>
+                        <span>Google Sheets: <strong id="gsheetSyncStatus">Active</strong></span>
+                    </div>
+
+                    <!-- Live Clock -->
+                    <div class="header-clock">
+                        <span class="clock-digits font-mono" id="liveClock">12:00:00</span>
+                        <span class="clock-sub" id="liveDate">Tue, Sep 1</span>
+                    </div>
+
+                    <!-- User Avatar -->
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name" id="topUserName">User</span>
+                            <span class="user-role" id="topUserRole">Role</span>
+                        </div>
+                        <div class="avatar-box">
+                            <img id="topUserAvatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MAIN BODY CONTENT -->
+            <main class="content-body">
+                
+                <!-- ========================================== -->
+                <!-- PORTAL 1: USER / CUSTOMER DASHBOARD       -->
+                <!-- ========================================== -->
+                <div class="role-portal-view" id="portalUser" style="display:none;">
+                    <div class="user-hero-card">
+                        <div class="user-hero-text">
+                            <span class="hero-badge"><i class="fa-solid fa-shield-heart"></i> Verified Chauffeurs &amp; Sanitized Cabs</span>
+                            <h2>Where To Travel Next, <span id="userGreetingName">Traveler</span>?</h2>
+                            <p>Book outstation round trips, airport cabs, and holiday tour packages at guaranteed best rates.</p>
+                            <div class="hero-cta-row">
+                                <button class="btn btn-primary" onclick="userSwitchTab('user-book')">
+                                    <i class="fa-solid fa-taxi"></i> Book Taxi / Tour
+                                </button>
+                                <button class="btn btn-secondary" onclick="userSwitchTab('user-trips')">
+                                    <i class="fa-solid fa-ticket"></i> My Trips (<span id="userMyTripsCount">0</span>)
+                                </button>
+                            </div>
+                        </div>
+                        <div class="user-hero-img">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&auto=format&fit=crop&q=80" alt="Travel">
+                        </div>
+                    </div>
+
+                    <div class="user-sub-view" id="userViewPackages">
+                        <div class="section-head mt-4">
+                            <h3 class="section-title">Explore Holiday Tour Packages</h3>
+                            <span class="text-muted">Click any package for instant itinerary &amp; booking</span>
+                        </div>
+                        <div class="packages-grid" id="userPackagesGrid"></div>
+                    </div>
+
+                    <div class="user-sub-view" id="userViewBookForm" style="display:none;">
+                        <div class="booking-portal-card mt-3">
+                            <div class="booking-portal-head">
+                                <div class="head-title-wrap">
+                                    <div class="head-icon"><i class="fa-solid fa-car-side"></i></div>
+                                    <div>
+                                        <h3>Online Tour &amp; Cab Booking</h3>
+                                        <p>Instant booking confirmation with real-time rate calculator.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form id="userBookingForm" class="clean-form">
+                                <div class="form-grid-3">
+                                    <div class="form-group">
+                                        <label for="userTripType">Service Category <span class="req">*</span></label>
+                                        <select id="userTripType" class="form-control" required>
+                                            <option value="Outstation Round-Trip">🚗 Outstation (Round-Trip)</option>
+                                            <option value="Outstation One-Way">➡️ Outstation (One-Way Drop)</option>
+                                            <option value="Local Sightseeing (8Hr/80Km)">🏙️ Local Sightseeing (8Hr/80Km)</option>
+                                            <option value="Airport Pickup / Drop">✈️ Airport Pickup / Drop</option>
+                                            <option value="Custom Tour Package">🗺️ Holiday Tour Package</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="userVehicleType">Select Vehicle <span class="req">*</span></label>
+                                        <select id="userVehicleType" class="form-control" onchange="autoCalculateUserFare()" required>
+                                            <option value="Sedan (Dzire / Etios)">🚗 Sedan (Dzire / Etios 4+1)</option>
+                                            <option value="SUV (Ertiga / Triber)">🚙 SUV (Ertiga 6+1)</option>
+                                            <option value="Premium SUV (Innova Crysta)">✨ Innova Crysta (7+1)</option>
+                                            <option value="Luxury (Fortuner / Audi)">👑 Luxury (Fortuner)</option>
+                                            <option value="Tempo Traveller (12/17 Seater)">🚐 Tempo Traveller (12/17)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="userPax">Passengers</label>
+                                        <input type="number" id="userPax" class="form-control" value="2" min="1" max="25">
+                                    </div>
+                                </div>
+
+                                <div class="form-grid-2">
+                                    <div class="form-group">
+                                        <label for="userPickupLoc">Pickup Address / Landmark <span class="req">*</span></label>
+                                        <div class="input-with-icon">
+                                            <i class="fa-solid fa-location-dot text-primary"></i>
+                                            <input type="text" id="userPickupLoc" class="form-control" placeholder="e.g. My Home / Hotel Taj" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="userDropLoc">Destination / Route <span class="req">*</span></label>
+                                        <div class="input-with-icon">
+                                            <i class="fa-solid fa-flag-checkered text-danger"></i>
+                                            <input type="text" id="userDropLoc" class="form-control" placeholder="e.g. Jaipur / Shimla / Agra" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-grid-2">
+                                    <div class="form-group">
+                                        <label for="userPickupTime">Pickup Date &amp; Time <span class="req">*</span></label>
+                                        <input type="datetime-local" id="userPickupTime" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="userReturnTime">Return Date &amp; Time</label>
+                                        <input type="datetime-local" id="userReturnTime" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="billing-card-clean">
+                                    <div class="form-grid-3">
+                                        <div class="form-group">
+                                            <label for="userFareEstimated">Total Tour Fare (₹)</label>
+                                            <input type="number" id="userFareEstimated" class="form-control font-bold" value="4500" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="userAdvanceAmount">Advance Payment (₹)</label>
+                                            <input type="number" id="userAdvanceAmount" class="form-control font-bold text-success" value="1000" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="userPayMode">Payment Option</label>
+                                            <select id="userPayMode" class="form-control">
+                                                <option value="UPI / QR Code">📱 UPI / QR (GPay / PhonePe / Paytm)</option>
+                                                <option value="Card Online">💳 Debit / Credit Card</option>
+                                                <option value="Pay on Pickup">⏳ Pay Full Cash to Chauffeur on Pickup</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-bottom-actions">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fa-solid fa-check-circle"></i> Confirm &amp; Request Booking
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-lg" onclick="userSwitchTab('user-packages')">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="user-sub-view" id="userViewMyTrips" style="display:none;">
+                        <div class="section-head mt-3">
+                            <h3 class="section-title">My Travel Bookings</h3>
+                            <button class="btn btn-primary btn-sm" onclick="userSwitchTab('user-book')">
+                                <i class="fa-solid fa-plus"></i> New Booking
+                            </button>
+                        </div>
+                        <div class="table-card">
+                            <table class="modern-table">
+                                <thead>
+                                    <tr>
+                                        <th>Slip #</th>
+                                        <th>Route / Tour</th>
+                                        <th>Vehicle</th>
+                                        <th>Pickup Time</th>
+                                        <th>Fare &amp; Due</th>
+                                        <th>Status</th>
+                                        <th class="text-right">Voucher</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="userTripsTableBody"></tbody>
+                            </table>
+                            <div class="empty-state" id="userTripsEmpty" style="display:none;">
+                                <i class="fa-solid fa-ticket"></i>
+                                <h4>No Bookings Found</h4>
+                                <p>You haven't booked any trips yet. Browse packages and book your next tour!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- PORTAL 2: RECEPTION COUNTER DASHBOARD      -->
+                <!-- ========================================== -->
+                <div class="role-portal-view" id="portalReception" style="display:none;">
+                    <div class="dashboard-grid">
+                        <div class="dash-left-col">
+                            <section class="card-section">
+                                <div class="section-head">
+                                    <h3 class="section-title">Reception Quick Packages</h3>
+                                    <button class="btn btn-primary btn-sm" onclick="openWalkInBookingDialog()">
+                                        <i class="fa-solid fa-pen-to-square"></i> New Walk-in Booking
+                                    </button>
+                                </div>
+                                <div class="packages-grid" id="receptionPackagesGrid"></div>
+                            </section>
+
+                            <div class="metrics-row">
+                                <div class="stat-card">
+                                    <div class="stat-card-header">
+                                        <h4>Reception Trip Overview</h4>
+                                    </div>
+                                    <div class="donut-container">
+                                        <div class="donut-chart-box">
+                                            <svg class="donut-svg" viewBox="0 0 100 100">
+                                                <circle class="donut-bg" cx="50" cy="50" r="40"></circle>
+                                                <circle class="donut-segment segment-done" cx="50" cy="50" r="40" stroke-dasharray="168 251" stroke-dashoffset="0"></circle>
+                                                <circle class="donut-segment segment-booked" cx="50" cy="50" r="40" stroke-dasharray="66 251" stroke-dashoffset="-168"></circle>
+                                                <circle class="donut-segment segment-cancel" cx="50" cy="50" r="40" stroke-dasharray="16 251" stroke-dashoffset="-234"></circle>
+                                            </svg>
+                                            <div class="donut-center-text">
+                                                <span class="donut-count" id="recTotalCount">2,839</span>
+                                                <span class="donut-label">Total Trips</span>
+                                            </div>
+                                        </div>
+                                        <div class="donut-legend-bar">
+                                            <div class="legend-item"><span class="legend-val">6.5%</span><span class="legend-lbl"><i class="dot dot-cancel"></i> Cancelled</span></div>
+                                            <div class="legend-item"><span class="legend-val">26.5%</span><span class="legend-lbl"><i class="dot dot-booked"></i> Booked</span></div>
+                                            <div class="legend-item"><span class="legend-val">67.0%</span><span class="legend-lbl"><i class="dot dot-done"></i> Done</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card">
+                                    <div class="stat-card-header">
+                                        <h4>Popular Destinations</h4>
+                                    </div>
+                                    <div class="dest-overview-box">
+                                        <div class="dest-hero-badge">
+                                            <div>
+                                                <h3 class="dest-total-val" id="recHappyTravelers">245,930</h3>
+                                                <span class="dest-total-lbl">Happy Travelers Served</span>
+                                            </div>
+                                            <button class="btn-circle-arrow" onclick="receptionSwitchTab('reception-queue')"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="dest-progress-list" id="recDestProgressList"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-section mt-3" id="receptionQueueSection">
+                                <div class="queue-toolbar">
+                                    <div class="queue-title-wrap">
+                                        <h3>Counter Booking Queue</h3>
+                                        <span class="badge-count-pill" id="recQueueCountBadge">0 Total</span>
+                                    </div>
+                                    <div class="filter-pill-group" id="recFilterTabs">
+                                        <button class="pill-btn active" data-filter="all">All</button>
+                                        <button class="pill-btn" data-filter="today">Today's Departures</button>
+                                        <button class="pill-btn" data-filter="pending-balance">⚠️ Dues</button>
+                                        <button class="pill-btn" data-filter="Confirmed">Confirmed</button>
+                                    </div>
+                                </div>
+                                <div class="table-card">
+                                    <table class="modern-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Slip #</th>
+                                                <th>Customer</th>
+                                                <th>Route &amp; Fleet</th>
+                                                <th>Pickup Time</th>
+                                                <th>Fare &amp; Due</th>
+                                                <th>Status</th>
+                                                <th class="text-right">Quick Desk Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="receptionQueueTableBody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-right-col">
+                            <div class="calendar-card">
+                                <div class="cal-header">
+                                    <button class="cal-nav" id="recCalPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <h4 class="cal-title" id="recCalMonthTitle">SEPTEMBER 2026</h4>
+                                    <button class="cal-nav" id="recCalNext"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="cal-weekdays"><span>SUN</span><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span></div>
+                                <div class="cal-days-grid" id="recCalDaysGrid"></div>
+                            </div>
+
+                            <div class="side-card">
+                                <div class="side-card-head">
+                                    <h4>Upcoming Trips</h4>
+                                </div>
+                                <div class="upcoming-trips-list" id="recUpcomingTripsList"></div>
+                            </div>
+
+                            <div class="side-card">
+                                <div class="side-card-head">
+                                    <h4>Recent Counter Logs</h4>
+                                </div>
+                                <div class="activity-feed" id="recActivityFeed"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- PORTAL 3: MASTER ADMIN DASHBOARD           -->
+                <!-- ========================================== -->
+                <div class="role-portal-view" id="portalAdmin" style="display:none;">
+                    
+                    <!-- Sub-view 1: Master Analytics & P&L Dashboard -->
+                    <div class="admin-sub-view" id="adminViewDashboard">
+                        <!-- Revenue & Net Profit KPI Bar -->
+                        <div class="kpi-grid">
+                            <div class="kpi-card">
+                                <div class="kpi-icon icon-blue"><i class="fa-solid fa-vault"></i></div>
+                                <div class="kpi-data">
+                                    <span class="kpi-label">Gross Booked Volume</span>
+                                    <h3 class="kpi-val" id="admKpiGross">₹0</h3>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon icon-green"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                <div class="kpi-data">
+                                    <span class="kpi-label">Advance Collected</span>
+                                    <h3 class="kpi-val" id="admKpiAdvance">₹0</h3>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon icon-amber"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                <div class="kpi-data">
+                                    <span class="kpi-label">Pending Customer Dues</span>
+                                    <h3 class="kpi-val" id="admKpiBalance">₹0</h3>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon icon-purple"><i class="fa-solid fa-chart-line"></i></div>
+                                <div class="kpi-data">
+                                    <span class="kpi-label">Net Agency Profit</span>
+                                    <h3 class="kpi-val text-success font-bold" id="admKpiNetProfit">₹0</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Sheets Quick Sync Bar -->
+                        <div class="gsheet-admin-box mt-3">
+                            <div class="gsheet-box-left">
+                                <div class="gsheet-icon"><i class="fa-solid fa-file-excel"></i></div>
+                                <div>
+                                    <h4>Google Sheets Real-Time Sync Engine</h4>
+                                    <p>Live webhook pushes bookings, trip expenses, and driver settlements to your Google Spreadsheet.</p>
+                                </div>
+                            </div>
+                            <div class="gsheet-box-right">
+                                <button class="btn btn-success btn-sm" onclick="exportBookingsCSV()">
+                                    <i class="fa-solid fa-download"></i> Export CSV for Sheet
+                                </button>
+                                <button class="btn btn-outline-dark btn-sm" onclick="openGSheetConfigModal()">
+                                    <i class="fa-solid fa-sliders"></i> Webhook Settings
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Master Bookings Table -->
+                        <div class="booking-portal-card mt-3">
+                            <div class="queue-toolbar">
+                                <div class="queue-title-wrap">
+                                    <h3>Master Bookings Manager</h3>
+                                    <span class="badge-count-pill" id="admBookingsCountBadge">0 Total</span>
+                                </div>
+                                <div class="queue-right-actions">
+                                    <button class="btn btn-primary btn-sm" onclick="openWalkInBookingDialog()">
+                                        <i class="fa-solid fa-plus"></i> New Master Booking
+                                    </button>
+                                    <button class="btn btn-subtle btn-sm" onclick="exportBookingsJSON()"><i class="fa-solid fa-file-export"></i> JSON</button>
+                                </div>
+                            </div>
+
+                            <div class="table-card">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Slip #</th>
+                                            <th>Customer &amp; Phone</th>
+                                            <th>Route &amp; Vehicle</th>
+                                            <th>Driver Assigned</th>
+                                            <th>Fare (₹)</th>
+                                            <th>Due (₹)</th>
+                                            <th>Status</th>
+                                            <th class="text-right">Admin Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admBookingsTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 2: Trip Expenses & Kharcha (P&L Ledger) -->
+                    <div class="admin-sub-view" id="adminViewExpenses" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Trip Expenses &amp; Net Profit Ledger (Kharcha)</h3>
+                                    <p class="text-muted">Track fuel, Fastag tolls, state border permits, driver DA &amp; net agency margin per ride.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="openAddExpenseModal()">
+                                    <i class="fa-solid fa-receipt"></i> + Add Trip Expense
+                                </button>
+                            </div>
+
+                            <div class="payment-kpi-row mt-2">
+                                <div class="pay-kpi-card blue-card">
+                                    <span>Total Trip Revenue</span>
+                                    <h3 id="expKpiRevenue">₹0</h3>
+                                </div>
+                                <div class="pay-kpi-card amber-card">
+                                    <span>Total Operational Kharcha</span>
+                                    <h3 id="expKpiTotalExp">₹0</h3>
+                                </div>
+                                <div class="pay-kpi-card green-card">
+                                    <span>Net Realized Profit</span>
+                                    <h3 id="expKpiProfit">₹0</h3>
+                                </div>
+                            </div>
+
+                            <div class="table-card mt-3">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Trip Slip #</th>
+                                            <th>Date</th>
+                                            <th>Category</th>
+                                            <th>Fuel / Toll / DA Details</th>
+                                            <th>Amount (₹)</th>
+                                            <th>Recorded By</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admExpensesTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 3: Driver Payroll & Bata Settlements -->
+                    <div class="admin-sub-view" id="adminViewDriverPayroll" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Driver Payroll &amp; Bata Settlement Ledger</h3>
+                                    <p class="text-muted">Manage Driver Daily Allowance (DA), trip commissions, advance given &amp; payout settlements.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="openSettleDriverModal()">
+                                    <i class="fa-solid fa-hand-holding-dollar"></i> Settle Driver Payout
+                                </button>
+                            </div>
+
+                            <div class="table-card mt-2">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Driver Name</th>
+                                            <th>Phone</th>
+                                            <th>Assigned Vehicle</th>
+                                            <th>Total Trips</th>
+                                            <th>Earned Bata / DA (₹)</th>
+                                            <th>Settled (₹)</th>
+                                            <th>Pending Payout (₹)</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admDriverPayrollTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 4: Fleet Garage & Document Expiry Watchdog -->
+                    <div class="admin-sub-view" id="adminViewFleet" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Fleet Garage &amp; Document Expiry Watchdog</h3>
+                                    <p class="text-muted">Track cab registration, Insurance validity, Fitness, PUC, and All-India Tourist Permit.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="openAddDriverModal()">
+                                    <i class="fa-solid fa-plus"></i> + Register Vehicle &amp; Driver
+                                </button>
+                            </div>
+
+                            <div class="table-card mt-2">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Vehicle &amp; Reg No</th>
+                                            <th>Driver Name</th>
+                                            <th>Fuel &amp; Seats</th>
+                                            <th>Insurance Expiry</th>
+                                            <th>Fitness / PUC</th>
+                                            <th>Status</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admFleetTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 5: Tour Packages Manager -->
+                    <div class="admin-sub-view" id="adminViewPackages" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Tour Packages Catalog Manager</h3>
+                                    <p class="text-muted">Create holiday tour packages, customize fares, durations &amp; photos.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="openAddPackageModal()">
+                                    <i class="fa-solid fa-plus"></i> Add New Tour Package
+                                </button>
+                            </div>
+
+                            <div class="packages-grid-large" id="admPackagesGrid"></div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 6: Dynamic Rate Card & Fare Matrix -->
+                    <div class="admin-sub-view" id="adminViewRateCard" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Per KM Rate Card &amp; Fare Matrix Configuration</h3>
+                                    <p class="text-muted">Set default per-km rates, min 250km/day outstation rules, driver night DA &amp; toll policies.</p>
+                                </div>
+                                <button class="btn btn-success btn-sm" onclick="saveRateCardSettings()">
+                                    <i class="fa-solid fa-floppy-disk"></i> Save Rate Card
+                                </button>
+                            </div>
+
+                            <div class="form-grid-3 mt-3">
+                                <div class="form-group">
+                                    <label>Sedan Rate (₹ / KM)</label>
+                                    <input type="number" id="rateSedan" class="form-control font-bold" value="12">
+                                </div>
+                                <div class="form-group">
+                                    <label>SUV (Ertiga) Rate (₹ / KM)</label>
+                                    <input type="number" id="rateSuv" class="form-control font-bold" value="16">
+                                </div>
+                                <div class="form-group">
+                                    <label>Innova Crysta Rate (₹ / KM)</label>
+                                    <input type="number" id="rateInnova" class="form-control font-bold" value="20">
+                                </div>
+                            </div>
+
+                            <div class="form-grid-3 mt-2">
+                                <div class="form-group">
+                                    <label>Tempo Traveller Rate (₹ / KM)</label>
+                                    <input type="number" id="rateTempo" class="form-control font-bold" value="28">
+                                </div>
+                                <div class="form-group">
+                                    <label>Min KM Charged / Day (Outstation)</label>
+                                    <input type="number" id="rateMinKm" class="form-control font-bold" value="250">
+                                </div>
+                                <div class="form-group">
+                                    <label>Driver Daily Allowance / DA (₹ / Day)</label>
+                                    <input type="number" id="rateDriverDa" class="form-control font-bold" value="400">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-view 7: Customer CRM & Staff RBAC -->
+                    <div class="admin-sub-view" id="adminViewCRM" style="display:none;">
+                        <div class="booking-portal-card">
+                            <div class="queue-toolbar">
+                                <div>
+                                    <h3>Customer CRM &amp; Staff Access Manager</h3>
+                                    <p class="text-muted">View customer lifetime value, manage reception operators &amp; staff credentials.</p>
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="openAddStaffModal()">
+                                    <i class="fa-solid fa-user-shield"></i> + Add Reception Staff
+                                </button>
+                            </div>
+
+                            <h4 class="mt-3 mb-2 font-bold"><i class="fa-solid fa-users text-primary"></i> Customer Directory &amp; Lifetime Value</h4>
+                            <div class="table-card">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer Name</th>
+                                            <th>Phone / WhatsApp</th>
+                                            <th>Total Bookings</th>
+                                            <th>Lifetime Value (₹)</th>
+                                            <th>Tag</th>
+                                            <th class="text-right">Connect</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admCrmTableBody"></tbody>
+                                </table>
+                            </div>
+
+                            <h4 class="mt-4 mb-2 font-bold"><i class="fa-solid fa-user-gear text-primary"></i> Receptionist Staff Accounts</h4>
+                            <div class="table-card">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Staff Name</th>
+                                            <th>Phone</th>
+                                            <th>Email / Username</th>
+                                            <th>Role</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admStaffTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- 3. COMPREHENSIVE MODALS                                        -->
+    <!-- ============================================================== -->
+
+    <!-- MODAL 1: Walk-In / Fast Reception Booking Modal -->
+    <div class="modal-backdrop" id="walkInModal" style="display:none;">
+        <div class="modal-dialog modal-invoice">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-pen-to-square text-primary"></i> New Walk-In / Counter Booking</div>
+                <button class="btn-close" onclick="closeWalkInBookingDialog()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="walkInBookingForm" class="clean-form">
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label>Customer Name <span class="req">*</span></label>
+                            <input type="text" id="walkCustName" class="form-control" placeholder="Rajesh Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp / Mobile <span class="req">*</span></label>
+                            <input type="tel" id="walkCustPhone" class="form-control" placeholder="10-digit mobile" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Category</label>
+                            <select id="walkServiceType" class="form-control">
+                                <option value="Outstation Round-Trip">🚗 Outstation Round-Trip</option>
+                                <option value="Outstation One-Way">➡️ Outstation One-Way</option>
+                                <option value="Local Sightseeing (8Hr/80Km)">🏙️ Local Sightseeing</option>
+                                <option value="Airport Pickup / Drop">✈️ Airport Pickup / Drop</option>
+                                <option value="Custom Tour Package">🗺️ Holiday Tour Package</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Pickup Location <span class="req">*</span></label>
+                            <input type="text" id="walkPickupLoc" class="form-control" placeholder="e.g. Reception Desk / Hotel" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Destination / Route <span class="req">*</span></label>
+                            <input type="text" id="walkDropLoc" class="form-control" placeholder="e.g. Jaipur - Agra Tour" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label>Pickup Date &amp; Time <span class="req">*</span></label>
+                            <input type="datetime-local" id="walkPickupTime" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Vehicle Model</label>
+                            <select id="walkVehicleType" class="form-control">
+                                <option value="Sedan (Dzire / Etios)">🚗 Sedan (Dzire / Etios)</option>
+                                <option value="SUV (Ertiga / Triber)">🚙 SUV (Ertiga 6+1)</option>
+                                <option value="Premium SUV (Innova Crysta)">✨ Innova Crysta (7+1)</option>
+                                <option value="Luxury (Fortuner / Audi)">👑 Luxury (Fortuner)</option>
+                                <option value="Tempo Traveller (12/17 Seater)">🚐 Tempo Traveller</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assigned Driver</label>
+                            <select id="walkDriverSelect" class="form-control">
+                                <option value="">Select Available Driver...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="billing-card-clean">
+                        <div class="form-grid-3">
+                            <div class="form-group">
+                                <label>Total Tour Fare (₹) <span class="req">*</span></label>
+                                <input type="number" id="walkTotalFare" class="form-control font-bold" value="4500" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Advance Paid (₹) <span class="req">*</span></label>
+                                <input type="number" id="walkAdvancePaid" class="form-control font-bold text-success" value="1000" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Payment Mode</label>
+                                <select id="walkPayMode" class="form-control">
+                                    <option value="Cash">💵 Cash at Desk</option>
+                                    <option value="UPI / QR Code">📱 UPI / QR Code</option>
+                                    <option value="Card">💳 Card</option>
+                                    <option value="Pay on Pickup">⏳ Pay to Driver</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeWalkInBookingDialog()">Cancel</button>
+                <button class="btn btn-primary btn-sm" onclick="submitWalkInBooking()"><i class="fa-solid fa-check"></i> Save &amp; Print Voucher</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Add Trip Expense (Kharcha) -->
+    <div class="modal-backdrop" id="addExpenseModal" style="display:none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-gas-pump text-amber"></i> Record Trip Expense (Kharcha)</div>
+                <button class="btn-close" onclick="closeAddExpenseModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="addExpenseForm">
+                    <div class="form-group">
+                        <label>Select Booking Trip <span class="req">*</span></label>
+                        <select id="expBookingSelect" class="form-control" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Expense Category <span class="req">*</span></label>
+                        <select id="expCategory" class="form-control" required>
+                            <option value="Fuel (Diesel / CNG)">⛽ Fuel (Diesel / CNG)</option>
+                            <option value="Fastag / Toll Plaza">🛣️ Fastag / Toll Tax</option>
+                            <option value="State Border Tax / Permit">🛂 State Border Entry Permit</option>
+                            <option value="Driver Allowance (Bata)">👨‍✈️ Driver DA / Food Allowance</option>
+                            <option value="Parking Charges">🅿️ Parking Fee</option>
+                            <option value="Vehicle Maintenance">🔧 Vehicle Repair / Tyre Puncture</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount (₹) <span class="req">*</span></label>
+                        <input type="number" id="expAmount" class="form-control font-bold text-danger" placeholder="e.g. 1500" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Notes / Receipt No</label>
+                        <input type="text" id="expNotes" class="form-control" placeholder="e.g. HP Petrol Pump bill #432">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeAddExpenseModal()">Cancel</button>
+                <button class="btn btn-primary btn-sm" onclick="submitAddExpense()"><i class="fa-solid fa-check"></i> Save Expense</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Driver Payroll Payout Settlement -->
+    <div class="modal-backdrop" id="settleDriverModal" style="display:none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-money-check-dollar text-success"></i> Settle Driver Payout</div>
+                <button class="btn-close" onclick="closeSettleDriverModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="settleDriverForm">
+                    <div class="form-group">
+                        <label>Select Driver</label>
+                        <select id="settleDriverSelect" class="form-control" onchange="autoLoadDriverPendingPayout()"></select>
+                    </div>
+                    <div class="pay-info-box mt-2">
+                        <span>Total Due to Driver:</span>
+                        <h3 id="settleDueAmount" class="text-danger font-mono font-bold">₹0</h3>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label>Settlement Amount (₹) <span class="req">*</span></label>
+                        <input type="number" id="settleAmount" class="form-control font-bold" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Mode</label>
+                        <select id="settleMode" class="form-control">
+                            <option value="Cash">💵 Cash</option>
+                            <option value="UPI / GPay">📱 UPI / GPay</option>
+                            <option value="Bank Transfer">🏦 Bank NEFT</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeSettleDriverModal()">Cancel</button>
+                <button class="btn btn-success btn-sm" onclick="submitDriverSettlement()"><i class="fa-solid fa-check"></i> Confirm Payout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Printable Invoice & Tax Voucher -->
+    <div class="modal-backdrop" id="invoiceModal" style="display:none;">
+        <div class="modal-dialog modal-invoice">
+            <div class="modal-header no-print">
+                <div class="modal-title"><i class="fa-solid fa-receipt text-primary"></i> Booking Slip / Tax Voucher</div>
+                <div class="modal-tools">
+                    <button class="btn btn-primary btn-sm" onclick="window.print();"><i class="fa-solid fa-print"></i> Print Slip</button>
+                    <button class="btn btn-success btn-sm" id="btnModalWhatsApp"><i class="fa-brands fa-whatsapp"></i> WhatsApp Slip</button>
+                    <button class="btn-close" id="btnCloseInvoice"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <div class="invoice-printable" id="printableArea">
+                <div class="inv-header">
+                    <div class="inv-brand">
+                        <img src="logo.jpg" alt="Logo" class="inv-logo" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=100&auto=format&fit=crop&q=80';">
+                        <div>
+                            <h2 class="inv-company-name">APNA TOUR &amp; TRAVELS</h2>
+                            <p class="inv-address">Main Reception Desk, Transport Terminal</p>
+                            <p class="inv-contact">📞 +91 9876543210 | ✉️ booking@apnatravels.com</p>
+                        </div>
+                    </div>
+                    <div class="inv-meta">
+                        <div class="inv-badge">BOOKING CONFIRMATION</div>
+                        <div class="inv-id-label">Slip No:</div>
+                        <div class="inv-id-val font-mono" id="invSlipId">TT-2026-0001</div>
+                        <div class="inv-date-label">Date: <span id="invBookedDate">01-09-2026</span></div>
+                    </div>
+                </div>
+
+                <div class="inv-divider"></div>
+
+                <div class="inv-grid-2">
+                    <div class="inv-card">
+                        <div class="inv-card-head"><i class="fa-solid fa-user"></i> PASSENGER DETAILS</div>
+                        <table class="inv-info-table">
+                            <tr><td>Name:</td><td class="font-bold" id="invCustName">Rajesh Sharma</td></tr>
+                            <tr><td>Mobile:</td><td class="font-bold" id="invCustPhone">+91 9876543210</td></tr>
+                            <tr><td>Passengers:</td><td id="invPassengers">2 Adults</td></tr>
+                        </table>
+                    </div>
+
+                    <div class="inv-card">
+                        <div class="inv-card-head"><i class="fa-solid fa-car"></i> VEHICLE &amp; CHAUFFEUR</div>
+                        <table class="inv-info-table">
+                            <tr><td>Category:</td><td class="font-bold" id="invServiceType">Outstation Round-Trip</td></tr>
+                            <tr><td>Vehicle:</td><td class="font-bold" id="invVehicleType">Sedan (Dzire / Etios)</td></tr>
+                            <tr><td>Driver / Cab:</td><td id="invDriverInfo">Ramesh (DL-1Z-9876)</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="inv-journey-box">
+                    <div class="journey-item">
+                        <span class="j-icon"><i class="fa-solid fa-location-dot text-primary"></i></span>
+                        <div>
+                            <div class="j-label">PICKUP LOCATION &amp; TIME</div>
+                            <div class="j-val font-bold" id="invPickupLoc">Hotel Taj, MG Road</div>
+                            <div class="j-time text-primary font-bold" id="invPickupTime">02 Sep 2026, 06:00 AM</div>
+                        </div>
+                    </div>
+                    <div class="journey-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="journey-item">
+                        <span class="j-icon"><i class="fa-solid fa-flag-checkered text-danger"></i></span>
+                        <div>
+                            <div class="j-label">DESTINATION / ROUTE</div>
+                            <div class="j-val font-bold" id="invDropLoc">Jaipur City (3 Days Tour)</div>
+                            <div class="j-time" id="invReturnTime">Return: 04 Sep 2026, 09:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="inv-payment-table">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-right">Amount (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tour / Taxi Package Charges</strong></td>
+                            <td class="text-right font-mono font-bold" id="invTotalAmount">₹4,500</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Advance Payment Received</strong> <span class="badge-pay-mode" id="invPayModeBadge">UPI</span></td>
+                            <td class="text-right font-mono text-success font-bold" id="invAdvanceAmount">- ₹1,000</td>
+                        </tr>
+                        <tr class="due-row">
+                            <td><strong class="text-danger">BALANCE AMOUNT PAYABLE TO CHAUFFEUR / DESK</strong></td>
+                            <td class="text-right font-mono text-danger font-bold text-lg" id="invBalanceAmount">₹3,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="inv-footer">
+                    <div class="inv-terms">
+                        <strong>Important Terms:</strong>
+                        <ol>
+                            <li>Toll tax &amp; state parking extra unless explicitly included.</li>
+                            <li>Please verify driver details before boarding.</li>
+                            <li>Balance payment must be cleared at start of tour.</li>
+                        </ol>
+                    </div>
+                    <div class="signature-line">
+                        <p>Authorized Signature</p>
+                        <small>Apna Tour &amp; Travels</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 5: Balance Collector Modal -->
+    <div class="modal-backdrop" id="paymentModal" style="display:none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-hand-holding-dollar text-success"></i> Collect Balance</div>
+                <button class="btn-close" id="btnClosePaymentModal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="pay-info-box">
+                    <div>Booking Slip: <strong id="paySlipId" class="font-mono">TT-2026-0001</strong></div>
+                    <div>Customer: <strong id="payCustomerName">Rajesh Sharma</strong></div>
+                    <div class="pay-due-alert">
+                        <span>Due Amount:</span>
+                        <h3 id="payDueDisplay" class="text-danger">₹3,500</h3>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <label>Amount Collecting (₹) <span class="req">*</span></label>
+                    <input type="number" id="collectAmount" class="form-control font-bold">
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="collectPaymentMode" class="form-control">
+                        <option value="Cash">💵 Cash</option>
+                        <option value="UPI / QR Code">📱 UPI / QR (GPay / PhonePe)</option>
+                        <option value="Card">💳 Card</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" id="btnCancelPayment">Cancel</button>
+                <button class="btn btn-success btn-sm" id="btnSubmitBalancePay"><i class="fa-solid fa-check"></i> Confirm Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 6: Google Sheets Live Webhook Settings -->
+    <div class="modal-backdrop" id="gsheetModal" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-table text-success"></i> Google Sheets Live Sync Hub</div>
+                <button class="btn-close" onclick="closeGSheetConfigModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Google Apps Script Webhook URL</label>
+                    <input type="url" id="cfgGSheetWebhook" class="form-control font-mono" placeholder="https://script.google.com/macros/s/AKfycbx.../exec">
+                    <small class="text-muted">Enter your deployed Google Apps Script Web App URL to receive live bookings &amp; expenses.</small>
+                </div>
+
+                <div class="form-group mt-3">
+                    <label>Auto-Sync Status</label>
+                    <select id="cfgAutoSync" class="form-control">
+                        <option value="enabled">✅ Enabled (Instant push on every new booking &amp; expense)</option>
+                        <option value="manual">⚠️ Manual Sync Only</option>
+                    </select>
+                </div>
+
+                <div class="gsheet-code-guide mt-3">
+                    <h5><i class="fa-solid fa-code"></i> Copy-Paste Google Apps Script Code:</h5>
+                    <p>In Google Sheets &gt; <em>Extensions &gt; Apps Script</em>, paste this script and click Deploy as Web App:</p>
+                    <pre class="code-box font-mono">function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([
+    data.id || "EXPENSE",
+    data.createdAt || new Date().toISOString(),
+    data.custName || data.category || "",
+    data.custPhone || "",
+    data.serviceType || "",
+    data.pickupLocation || "",
+    data.dropLocation || "",
+    data.vehicleType || "",
+    data.driverAssigned || "",
+    data.totalFare || data.amount || 0,
+    data.advancePaid || 0,
+    data.balanceDue || 0,
+    data.paymentMode || "",
+    data.bookingStatus || "Recorded"
+  ]);
+  return ContentService.createTextOutput(JSON.stringify({result: "success"})).setMimeType(ContentService.MimeType.JSON);
+}</pre>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeGSheetConfigModal()">Close</button>
+                <button class="btn btn-primary btn-sm" onclick="saveGSheetConfig()">Save Configuration</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 7: Register Vehicle & Driver -->
+    <div class="modal-backdrop" id="addDriverModal" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-car text-primary"></i> Register Fleet Vehicle &amp; Driver</div>
+                <button class="btn-close" onclick="closeAddDriverModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="addDriverForm">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Driver Full Name</label>
+                            <input type="text" id="newDriverName" class="form-control" placeholder="Ramesh Singh" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" id="newDriverPhone" class="form-control" placeholder="9876543210" maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Vehicle Model</label>
+                            <input type="text" id="newDriverVehicle" class="form-control" placeholder="Toyota Innova Crysta" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Cab Registration No</label>
+                            <input type="text" id="newDriverCarNo" class="form-control font-mono" placeholder="DL-1Z-9876" required>
+                        </div>
+                    </div>
+                    <div class="form-grid-3">
+                        <div class="form-group">
+                            <label>Fuel &amp; Seats</label>
+                            <input type="text" id="newDriverFuel" class="form-control" placeholder="Diesel / 7 Seats" value="Diesel / 7 Seats">
+                        </div>
+                        <div class="form-group">
+                            <label>Insurance Expiry Date</label>
+                            <input type="date" id="newDriverInsurance" class="form-control" value="2027-05-15">
+                        </div>
+                        <div class="form-group">
+                            <label>Fitness / PUC Expiry</label>
+                            <input type="date" id="newDriverFitness" class="form-control" value="2027-08-20">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeAddDriverModal()">Cancel</button>
+                <button class="btn btn-primary btn-sm" onclick="submitAddDriver()"><i class="fa-solid fa-plus"></i> Save Vehicle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 8: Add Package Modal -->
+    <div class="modal-backdrop" id="addPackageModal" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-map-location-dot text-primary"></i> Add Tour Package</div>
+                <button class="btn-close" onclick="closeAddPackageModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="addPackageForm">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Package Title</label>
+                            <input type="text" id="newPkgName" class="form-control" placeholder="e.g. Kedarnath Special" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Duration</label>
+                            <input type="text" id="newPkgDuration" class="form-control" placeholder="5 Days, 4 Nights" required>
+                        </div>
+                    </div>
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label>Package Price (₹)</label>
+                            <input type="number" id="newPkgPrice" class="form-control font-bold" placeholder="24000" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Default Vehicle</label>
+                            <input type="text" id="newPkgVehicle" class="form-control" placeholder="Innova Crysta" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Image URL</label>
+                        <input type="url" id="newPkgImg" class="form-control font-mono" placeholder="https://images.unsplash.com/...">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeAddPackageModal()">Cancel</button>
+                <button class="btn btn-primary btn-sm" onclick="submitAddPackage()"><i class="fa-solid fa-plus"></i> Create Package</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 9: Add Staff Modal -->
+    <div class="modal-backdrop" id="addStaffModal" style="display:none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header">
+                <div class="modal-title"><i class="fa-solid fa-user-plus text-primary"></i> Add Reception Staff</div>
+                <button class="btn-close" onclick="closeAddStaffModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="addStaffForm">
+                    <div class="form-group">
+                        <label>Staff Full Name</label>
+                        <input type="text" id="newStaffName" class="form-control" placeholder="Pooja Sharma" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="newStaffPhone" class="form-control" placeholder="9811223344" maxlength="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Login Email</label>
+                        <input type="email" id="newStaffEmail" class="form-control" placeholder="pooja@apna.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Login Password</label>
+                        <input type="password" id="newStaffPass" class="form-control" placeholder="••••••••" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" onclick="closeAddStaffModal()">Cancel</button>
+                <button class="btn btn-primary btn-sm" onclick="submitAddStaff()"><i class="fa-solid fa-check"></i> Register Staff</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Core App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
